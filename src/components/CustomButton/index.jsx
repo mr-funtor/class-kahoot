@@ -1,9 +1,19 @@
 import styles from "./CustomButton.module.css"
 
 
-const CustomButton =({onClick,containerStyle,buttonText,type, textStyle})=>{
-    return(
+
+//Example
+{/* <CustomButton
+      buttonText={"lala"}
+      containerStyle={styles.container}
+    /> */}
+
+
+
+const CustomButton = ({ onClick, containerStyle, buttonText, type, textStyle, style }) => {
+    return (
         <button
+        style={style}
             className={`${styles.btnBody} ${containerStyle && containerStyle}`}
             onClick={onClick}
         >
