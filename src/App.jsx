@@ -10,18 +10,14 @@ import WelcomePage from './pages/WelcomePage/WelcomePage'
 
 function App() {
   return (
-
     <Router>
-
       <Routes>
-        <Route path="/" element={<GamePinPage />} />
-        <Route path="/" element={<NicknamePage />} />
-        <Route path="/" element={<WelcomePage />} />
+        <Route path="/gamePin" element={<GamePinPage />} />
+        <Route path="/nickName" element={<NicknamePage />} />
+        <Route path="/welcome" element={<WelcomePage />} />
       </Routes>
     </Router>
-
-
-  )
+  );
 }
 
 export default App;
