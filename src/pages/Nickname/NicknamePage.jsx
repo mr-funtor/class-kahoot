@@ -1,11 +1,13 @@
 import React from 'react'
-import styles from "./nickName.module.css"
+import style from "./nickName.module.css"
+// import InputComponent from '../../components/InputComponent'
+
 const NicknamePage = () => {
   return (
     <div>
-      <h1>Clahoot!</h1>
-    <div  className={Style.nickname}>
-      <input type="text" placeholder='Nickname' />
+    <div  className={style.nickname}>
+     <h1>weeeeeee</h1>
+     
     </div>
     </div>
   )

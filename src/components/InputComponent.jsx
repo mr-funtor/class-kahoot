@@ -3,7 +3,7 @@ import React from 'react'
 const InputComponent = () => {
   return (
     <div>
-     <input type="text" />
+    <h1></h1>
 
 
     </div>
