@@ -9,10 +9,6 @@ import GamePinPage from "./pages/GamePage/GamePinPage";
 import NicknamePage from "./pages/Nickname/NicknamePage";
 import CustomInput from "./components/CustomInput/CustomInput";
 
-<<<<<<< HEAD
-=======
-
->>>>>>> d9f6a150aefc1cf6499c476b6e15554e921de085
 
 function App() {
   return (
