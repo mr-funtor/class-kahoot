@@ -3,11 +3,6 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-<<<<<<< HEAD
-import NicknamePage from './pages/Nickname/NicknamePage'
-
-=======
->>>>>>> 81a540481cb4805d1b2e4ff2e75b372514951601
 //Pages
 import GamePinPage from './pages/GamePage/GamePinPage'
 import NicknamePage from './pages/Nickname/NicknamePage'
