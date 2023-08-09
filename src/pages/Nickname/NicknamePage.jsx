@@ -4,10 +4,9 @@ const NicknamePage = () => {
   return (
     <div>
       <h1>Clahoot!</h1>
-    <div  className={Style.nickname}>
-      <input type="text" placeholder='Nickname' />
+    
     </div>
-    </div>
+    
   )
 }
 
