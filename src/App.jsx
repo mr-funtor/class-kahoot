@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 //Pages
 import GamePinPage from "./pages/GamePage/GamePinPage";
 import NicknamePage from "./pages/Nickname/NicknamePage";
-import CustomInput from "./components/CustomInput/CustomInput";
+
 
 
 function App() {
