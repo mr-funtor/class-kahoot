@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./CustomInput.module.css"
 
-const CustomInput = (placeholder, text, value,onClick,style, customStyle) => {
+const CustomInput = ({placeholder, text, value,onClick,style, customStyle}) => {
   return (
     <div>
       <input type={text} 
