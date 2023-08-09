@@ -4,7 +4,7 @@ const WelcomePage = () => {
   return (
     <div>WelcomePage
 
-      <h1>Royyyyy</h1>
+     
     </div>
   )
 }
