@@ -11,7 +11,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 //Pages
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <Router>
