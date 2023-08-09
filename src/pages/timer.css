@@ -1,0 +1,44 @@
+.App {
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  margin: auto;
+  height: 100vh;
+}
+
+.timerContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.questionNum {
+  color: #f0f0f0;
+}
+
+.progressBar {
+  width: 70vw;
+  height: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  transition: width 1.8s ease-out, background-color 0.8s ease-in-out;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.red {
+  background-color: red;
+}
