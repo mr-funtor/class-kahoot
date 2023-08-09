@@ -5,11 +5,10 @@ import style from "./nickName.module.css"
 const NicknamePage = () => {
   return (
     <div>
-    <div  className={style.nickname}>
-     <h1>weeeeeee</h1>
-     
+      <h1>Clahoot!</h1>
+    
     </div>
-    </div>
+    
   )
 }
 
