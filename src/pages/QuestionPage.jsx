@@ -4,6 +4,7 @@ import "./timer.css";
 import "./questionBox.css";
 import "./answerOptions.css";
 import { CustomButton } from "../components";
+// import options from "./options";
 
 const QuestionPage = () => {
   const [progress, setProgress] = useState(0);
@@ -56,7 +57,9 @@ const QuestionPage = () => {
         </p>
       </div>
 
-      <div className="answerOptions"></div>
+      <div className="answerOptions">
+        <h1>Testing</h1>
+      </div>
     </div>
   );
 };
