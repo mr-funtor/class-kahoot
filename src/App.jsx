@@ -12,11 +12,11 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/gamePin" element={<GamePinPage />} />
-        <Route path="/nickName" element={<NicknamePage />} />
-         </Routes>
+        <Route path="/gamePin" element={ <GamePinPage /> } />
+        <Route path="/nickName" element={ <NicknamePage /> } />
+      </Routes>
     </Router>
-   
+
   );
 }
 

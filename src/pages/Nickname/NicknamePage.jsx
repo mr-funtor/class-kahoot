@@ -4,9 +4,8 @@ const NicknamePage = () => {
   return (
     <div>
       <h1>Clahoot!</h1>
-    
+
     </div>
-    
   )
 }
 
