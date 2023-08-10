@@ -1,9 +1,17 @@
 import React from 'react'
-import styles from "./nickName.module.css"
-const NicknamePage = () => {
+import style from "./nickName.module.css"
+import CustomButton from '../../components/CustomButton'
+
+
+const NicknamePage = ({ buttonText }) => {
   return (
-    <div>
+    <div className={ style.container }>
       <h1>Clahoot!</h1>
+      <div className={ style.kahootDiv }>
+
+
+        <CustomButton />
+      </div>
 
     </div>
   )
