@@ -1,4 +1,3 @@
-
 import LoadingSpinner from "../../components/LoadingSpinner";
 import styles from "./PlayerWaiting.module.css";
 import userAvi from "../../assets/avatars/avatar1.svg";
@@ -9,8 +8,8 @@ import ModalContextProvider from "../../context/ModalContext";
 import Images from "../../components/PopUpModal/Images";
 
 const PlayerWaiting = () => {
-  const [playerName] = useState("Janie123");
-  const [isOpen, setIsOpen] = useState(false);
+    const [playerName] = useState("Janie123");
+    const [isOpen, setIsOpen] = useState(false);
 
 
   return (
@@ -38,10 +37,16 @@ const PlayerWaiting = () => {
           </LoadingSpinner>
 
           <h2 className={styles.playerNN}>{playerName}</h2>
+
           <p className={styles.desc}>
-            Kindly wait for other <br /> players to join in!
+            Kindly wait for other <br />
+            players to join in
+            <span className={`${styles.dot} ${styles.dot1}`}> .</span>{" "}
+            <span className={`${styles.dot} ${styles.dot2}`}>.</span>{" "}
+            <span className={`${styles.dot} ${styles.dot3}`}>.</span>
           </p>
         </div>
+
         {isOpen && <PopUpModal setIsOpen={setIsOpen} />}
       </div>
     </ModalContextProvider>
