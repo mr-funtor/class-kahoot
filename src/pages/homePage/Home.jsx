@@ -12,13 +12,15 @@ const Home = () => {
             icon: logo,
             image: icon,
             user: "Host",
-            text: "Create a room"
+            text: "Create a room",
+            pageLink: '/createRoom'
         },
         {
             icon: logo,
             image: iconTwo,
             user: "Join",
-            text: "Join a room"
+            text: "Join a room",
+            pageLink: '/gamePin'
         }
     ]
 
@@ -40,7 +42,7 @@ const Home = () => {
                                 <div className={ style.imageDiv }><img src={ cards.image } alt="" /></div>
                                 <div className={ style.user }>{ cards.user }</div>
                                 <div className={ style.link }>
-                                    <Link to="/gamePin">{ cards.text }</Link>
+                                    <Link to={cards.pageLink}>{ cards.text }</Link>
                                 </div>
 
                             </div>
