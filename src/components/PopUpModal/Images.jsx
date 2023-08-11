@@ -15,13 +15,20 @@ const Images = () => {
 
   return (
     <div>
-      <img
-        style={{
-          width: "150px",
-        }}
-        src={defaultImage}
-        alt="default avatar"
-      />
+
+      {
+        defaultImage ? (
+          <img
+            style={ {
+              width: "150px",
+            } }
+            src={ defaultImage }
+            alt="default avatar"
+          />
+        ) :
+          "Hello"
+      }
+
     </div>
   );
 };

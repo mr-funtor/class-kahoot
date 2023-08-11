@@ -28,7 +28,7 @@ const PlayerWaiting = () => {
                                     >
                                         <img src={ editIcon } className={ styles.editIcon } alt="Select avatar" />
                                     </button>
-                                    <img src={ userAvi } className={ styles.userAvi } alt='user avatar' />
+                                    <Images />
                                 </div>
                                 :
                                 <p className={ styles.wait }>Please wait...</p>
@@ -37,7 +37,8 @@ const PlayerWaiting = () => {
 
                     <h2 className={ styles.playerNN }>{ playerName }</h2>
 
-                    <p className={ styles.desc }>Kindly wait for other players to join in
+                    <p className={ styles.desc }>Kindly wait for other <br />
+                        players to join in
                         <span className={ `${styles.dot} ${styles.dot1}` }> .</span> <span className={ `${styles.dot} ${styles.dot2}` }>.</span> <span className={ `${styles.dot} ${styles.dot3}` }>.</span>
                     </p>
                 </div>
