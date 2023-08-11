@@ -8,6 +8,7 @@ import NicknamePage from "./pages/Nickname/NicknamePage";
 import HomePage from "./pages/homePage/Home"
 import CustomInput from "./components/CustomInput/CustomInput";
 import PlayerWaiting from "./pages/PlayerWaiting";
+import Home from "./pages/homePage/Home";
 
 
 
@@ -19,6 +20,7 @@ function App() {
         <Link to="nickname">Nickname page</Link>
         <Link to="playerWaiting">Player waiting page</Link>
         <Routes>
+          <Route path="/" element={ <Home /> } />
           <Route path="/gamePin" element={ <GamePinPage /> } />
           <Route path="/nickName" element={ <NicknamePage /> } />
           <Route path="/playerWaiting" element={ <PlayerWaiting /> } />
