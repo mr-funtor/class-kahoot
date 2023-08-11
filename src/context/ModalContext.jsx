@@ -10,7 +10,7 @@ import img6 from "../assets/avatars/avatar-svgrepo-com.svg";
 import img7 from "../assets/avatars/avocado.svg";
 import img8 from "../assets/avatars/batman.svg";
 import img9 from "../assets/avatars/blackCat.svg";
-import img10 from "../assets/avatars/brownPanda.svg";
+import img10 from "../assets/avatars/dead.svg";
 import img11 from "../assets/avatars/einsteinTongue.svg";
 import img12 from "../assets/avatars/fox.svg";
 import img13 from "../assets/avatars/geisha.svg";
