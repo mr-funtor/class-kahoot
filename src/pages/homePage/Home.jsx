@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom'
+
 import style from "./Homepage.module.css";
 import logo from "../../assets/Ellipse 12.svg"
 import icon from "../../assets/Group 27.svg"
@@ -38,7 +40,7 @@ const Home = () => {
                                 <div className={ style.imageDiv }><img src={ cards.image } alt="" /></div>
                                 <div className={ style.user }>{ cards.user }</div>
                                 <div className={ style.link }>
-                                    <a href="">{ cards.text }</a>
+                                    <Link to="/gamePin">{ cards.text }</Link>
                                 </div>
 
                             </div>
