@@ -1,13 +1,21 @@
-// components
+import { useState } from "react";
 
 //assets
 import { ModalContext } from "../../context/ModalContext";
 import { useContext } from "react";
 
 const ImageData = () => {
+  const { avatars, setSelectedImage } = useContext(ModalContext);
 
-  const { avatars, handleImageClick } = useContext(ModalContext);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
+  const handleImageClick = (image) => {
+    setSelectedImage(image.imageSource);
+  };
+  const handleImageSelection = (index) => {
+    setSelectedImageIndex(index);
+    handleImageClick(avatars[index]);
+  };
 
   return (
     <div style={{ display: "flex" }}>
@@ -19,12 +27,25 @@ const ImageData = () => {
         }}
       >
         {avatars.map((image, index) => (
-          <div key={index}>
+          <div
+            key={index}
+            // onClick={() => handleImageClick(image)}
+            style={{
+              width: "80px",
+              borderRadius: "100%",
+              border: selectedImageIndex === index ? "2px solid blue" : "none",
+            }}
+          >
             <img
-              style={{ width: "80px" }}
+              style={{
+                width: "80px",
+                borderRadius: "100%",
+                border:
+                  selectedImageIndex === index ? "2px solid blue" : "none",
+              }}
               src={image.imageSource}
               alt={`Image ${index}`}
-              onClick={() => handleImageClick(image)}
+              onClick={() => handleImageSelection(index)}
             />
           </div>
         ))}

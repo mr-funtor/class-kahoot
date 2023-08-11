@@ -1,7 +1,7 @@
-import styles from './PopUpModal.module.css'
+import styles from "./PopUpModal.module.css";
 import { RiCloseLine } from "react-icons/ri";
 
-import ImageData from './ImageData';
+import ImageData from "./ImageData";
 
 const PopUpModal = ({ setIsOpen }) => {
   return (
@@ -10,7 +10,6 @@ const PopUpModal = ({ setIsOpen }) => {
       <div className={styles.centered}>
         <div className={styles.modal}>
           <div className={styles.modalHeader}>
-            
             <h5 className={styles.heading}>Select an avatar</h5>
           </div>
 
@@ -21,6 +20,14 @@ const PopUpModal = ({ setIsOpen }) => {
           <div className={styles.modalContent}>
             <ImageData />
           </div>
+          <div className={styles.modalActions}>
+            <button
+              className={styles.selectBtn}
+              onClick={() => setIsOpen(false)}
+            >
+              Select
+            </button>
+          </div>
         </div>
       </div>
     </>
@@ -28,4 +35,3 @@ const PopUpModal = ({ setIsOpen }) => {
 };
 
 export default PopUpModal;
-

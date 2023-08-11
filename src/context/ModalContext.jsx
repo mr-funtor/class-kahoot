@@ -3,7 +3,7 @@ import { createContext, useState, useEffect } from "react";
 //assets
 import img1 from "../assets/avatars/angryBear.svg";
 import img2 from "../assets/avatars/avatar-girl-svgrepo-com (1).svg";
-import img3 from "../assets/avatars/tophat.svg";
+import img3 from "../assets/avatars/annoyedEmoji.svg";
 import img4 from "../assets/avatars/sunglassesDarkHair.svg";
 import img5 from "../assets/avatars/avatar-svgrepo-com (1).svg";
 import img6 from "../assets/avatars/avatar-svgrepo-com.svg";
@@ -15,13 +15,8 @@ import img11 from "../assets/avatars/einsteinTongue.svg";
 import img12 from "../assets/avatars/fox.svg";
 import img13 from "../assets/avatars/geisha.svg";
 import img14 from "../assets/avatars/glassesGranny.svg";
-import img15 from "../assets/avatars/glassesMouth.svg";
+import img15 from "../assets/avatars/avatar1.svg";
 import img16 from "../assets/avatars/hijab.svg";
-// import img17 from "../assets/avatars/lion.svg";
-// import img18 from "../assets/avatars/weirdo.svg";
-// import img19 from "../assets/avatars/robotAang.svg";
-// import img20 from "../assets/avatars/sheik.svg";
-import userAvi from "../assets/avatars/avatar1.svg";
 
 // array holding the images
 const avatars = [
@@ -89,28 +84,12 @@ const avatars = [
     imageSource: img16,
     isSelected: false,
   },
-  // {
-  //   imageSource: img17,
-  //   isSelected: false,
-  // },
-  // {
-  //   imageSource: img18,
-  //   isSelected: false,
-  // },
-  // {
-  //   imageSource: img19,
-  //   isSelected: false,
-  // },
-  // {
-  //   imageSource: img20,
-  //   isSelected: false,
-  // },
 ];
 
 export const ModalContext = createContext();
 
 const ModalContextProvider = ({ children }) => {
-  const [defaultImage, setDefaultImage] = useState(userAvi);
+  const [defaultImage, setDefaultImage] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
@@ -118,16 +97,13 @@ const ModalContextProvider = ({ children }) => {
     setDefaultImage(avatars[randomIndex].imageSource);
   }, []);
 
-  const handleImageClick = (image) => {
-    setSelectedImage(image.imageSource);
-  };
 
   const passedObjects = {
     defaultImage,
     setDefaultImage,
     avatars,
     selectedImage,
-    handleImageClick,
+    setSelectedImage,
   };
 
   return (
