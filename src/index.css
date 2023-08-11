@@ -9,4 +9,7 @@ body {
   padding: 0;
   font-family: "Palanquin Dark", sans-serif;
   font-size: 1.75rem;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
