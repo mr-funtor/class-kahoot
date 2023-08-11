@@ -1,3 +1,4 @@
+
 import LoadingSpinner from "../../components/LoadingSpinner";
 import styles from "./PlayerWaiting.module.css";
 import userAvi from "../../assets/avatars/avatar1.svg";
@@ -10,6 +11,7 @@ import Images from "../../components/PopUpModal/Images";
 const PlayerWaiting = () => {
   const [playerName] = useState("Janie123");
   const [isOpen, setIsOpen] = useState(false);
+
 
   return (
     <ModalContextProvider>
