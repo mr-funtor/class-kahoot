@@ -1,3 +1,37 @@
-/* .nickName {
-
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0E0132;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
 } */
+.kahootDiv {
+  width: 28rem;
+  height: 13rem;
+  border-radius: 6px;
+  background: #fff;
+}
+h1 {
+  color: #fff;
+  font-family: Palanquin Dark;
+  font-size: 55px;
+  text-align: center;
+}
+.btnBackground {
+  background: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .kahootDiv {
+    width: 17rem;
+    height: 8rem;
+    border-radius: 6px;
+    background: #fff;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+}
