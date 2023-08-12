@@ -18,37 +18,36 @@ const ImageData = () => {
   };
 
   return (
-    <div style={{ display: "flex" }}>
+    <div style={ { display: "flex" } }>
       <div
-        style={{
+        style={ {
           display: "grid",
           gridTemplateColumns: "repeat(4, 1fr)",
           gap: "1em",
-        }}
+        } }
       >
-        {avatars.map((image, index) => (
+        { avatars.map((image, index) => (
           <div
-            key={index}
+            key={ index }
             // onClick={() => handleImageClick(image)}
-            style={{
+            style={ {
               width: "80px",
               borderRadius: "100%",
-              border: selectedImageIndex === index ? "2px solid blue" : "none",
-            }}
+              // border: selectedImageIndex === index ? "2px solid blue" : "none",
+            } }
           >
             <img
-              style={{
+              style={ {
                 width: "80px",
                 borderRadius: "100%",
-                border:
-                  selectedImageIndex === index ? "2px solid blue" : "none",
-              }}
-              src={image.imageSource}
-              alt={`Image ${index}`}
-              onClick={() => handleImageSelection(index)}
+                border: selectedImageIndex === index ? "2px solid blue" : "none",
+              } }
+              src={ image.imageSource }
+              alt={ `Image ${index}` }
+              onClick={ () => handleImageSelection(index) }
             />
           </div>
-        ))}
+        )) }
       </div>
     </div>
   );
