@@ -110,7 +110,6 @@ const ModalContextProvider = ({ children }) => {
     handleImageClick(avatars[index]);
   };
 
-
   const passedObjects = {
     defaultImage,
     setDefaultImage,
