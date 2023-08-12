@@ -3,7 +3,7 @@ import { useContext, useEffect } from "react";
 
 import { ModalContext } from "../../context/ModalContext";
 
-const Images = () => {
+const DefaultImage = () => {
   //context props
   const { selectedImage, defaultImage, setDefaultImage } =
     useContext(ModalContext);
@@ -26,4 +26,4 @@ const Images = () => {
   );
 };
 
-export default Images;
+export default DefaultImage;

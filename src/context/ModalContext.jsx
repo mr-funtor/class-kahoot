@@ -91,11 +91,24 @@ export const ModalContext = createContext();
 const ModalContextProvider = ({ children }) => {
   const [defaultImage, setDefaultImage] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
+
+  // sets default image to random image every time the page loads
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * avatars.length);
     setDefaultImage(avatars[randomIndex].imageSource);
   }, []);
+  
+
+  // sets default image to selected image
+  const handleImageClick = (image) => {
+    setSelectedImage(image.imageSource);
+  };
+  const handleImageSelection = (index) => {
+    setSelectedImageIndex(index);
+    handleImageClick(avatars[index]);
+  };
 
 
   const passedObjects = {
@@ -104,6 +117,8 @@ const ModalContextProvider = ({ children }) => {
     avatars,
     selectedImage,
     setSelectedImage,
+    selectedImageIndex,
+    handleImageSelection,
   };
 
   return (
