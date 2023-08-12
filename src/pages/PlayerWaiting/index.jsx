@@ -36,11 +36,11 @@ const PlayerWaiting = () => {
 
                     <h2 className={ styles.playerNN }>{ playerName }</h2>
 
-                    <p className={ styles.desc }>
-                        Kindly wait for other <br />
+                    { !isOpen && <p className={ styles.desc }>
+                        Kindly wait for other
                         players to join in
                         <LoadingDots />
-                    </p>
+                    </p> }
                 </div>
 
                 { isOpen && <PopUpModal setIsOpen={ setIsOpen } /> }
