@@ -3,27 +3,27 @@ import { useContext, useEffect } from "react";
 
 import { ModalContext } from "../../context/ModalContext";
 
-const Images = () => {
+const DefaultImage = () => {
   //context props
   const { selectedImage, defaultImage, setDefaultImage } =
     useContext(ModalContext);
 
-  // changing the default image to the selected image
   useEffect(() => {
+    //
     setDefaultImage(selectedImage);
   }, [selectedImage]);
 
   return (
-    <div>
+    <div style={ { display: 'grid', placeItems: 'center' } }>
       <img
-        style={{
-          width: "150px",
-        }}
-        src={defaultImage}
+        style={ {
+          width: "85%",
+        } }
+        src={ defaultImage }
         alt="default avatar"
       />
     </div>
   );
 };
 
-export default Images;
+export default DefaultImage;
