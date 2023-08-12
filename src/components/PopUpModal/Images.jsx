@@ -8,8 +8,8 @@ const Images = () => {
   const { selectedImage, defaultImage, setDefaultImage } =
     useContext(ModalContext);
 
-  // changing the default image to the selected image
   useEffect(() => {
+    //
     setDefaultImage(selectedImage);
   }, [selectedImage]);
 

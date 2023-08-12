@@ -33,7 +33,6 @@ const ImageData = () => {
             style={{
               width: "80px",
               borderRadius: "100%",
-              border: selectedImageIndex === index ? "2px solid blue" : "none",
             }}
           >
             <img
@@ -41,7 +40,7 @@ const ImageData = () => {
                 width: "80px",
                 borderRadius: "100%",
                 border:
-                  selectedImageIndex === index ? "2px solid blue" : "none",
+                  selectedImageIndex === index ? "3px solid #0e0132" : "none",
               }}
               src={image.imageSource}
               alt={`Image ${index}`}
