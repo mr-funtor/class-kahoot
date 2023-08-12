@@ -17,9 +17,9 @@ import img15 from "./avatars/avatar1.svg";
 import img16 from "./avatars/hijab.svg";
 
 // icons
-import logo from "./Ellipse 12.svg";
-import icon from "./Group 27.svg";
-import iconTwo from "./Group 27 (1).svg";
+import logo from "./icons/Ellipse 12.svg";
+import icon from "./icons/Group 27.svg";
+import iconTwo from "./icons/Group 27 (1).svg";
 
 export {
     // avatars
