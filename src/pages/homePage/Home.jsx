@@ -27,7 +27,7 @@ const Home = () => {
 
     return (
         <>
-            <div className={ style.App }>
+            <div className={ style.homePage }>
                 <h1>Welcome To Clahoot</h1>
                 <div className={ style.cardDiv }>
                     { cardItems.map((cards, index) => {
