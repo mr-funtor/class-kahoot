@@ -11,13 +11,15 @@ const Home = () => {
         icon: logo,
         image: icon,
         user: "Host",
-        text: "Create a room"
+        text: "Create a room",
+        linkto: '/'
     },
     {
         icon: logo,
         image: iconTwo,
         user: "Join",
-        text: "Join a room"
+        text: "Join a room",
+        linkto: '/gamePin'
     }
  ]
 
@@ -39,7 +41,7 @@ const Home = () => {
             <div className={style.imageDiv}><img src={cards.image} alt="" /></div>
             <div className={style.user}>{cards.user}</div>
             <div className={style.link}>
-                <a href="">{cards.text}</a>
+                <Link to={cards.linkto}>{cards.text}</Link>
             </div>
 
             </div>
@@ -52,3 +54,4 @@ const Home = () => {
 
   )
 }
+export default Home
