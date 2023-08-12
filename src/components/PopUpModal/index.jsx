@@ -11,6 +11,7 @@ const PopUpModal = ({ setIsOpen }) => {
   // imports from modal context
   const { avatars, selectedImageIndex,handleImageSelection } = useContext(ModalContext);
  
+  
 
   return (
     <>
