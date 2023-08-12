@@ -14,12 +14,12 @@ const DefaultImage = () => {
   }, [selectedImage]);
 
   return (
-    <div>
+    <div style={ { display: 'grid', placeItems: 'center' } }>
       <img
-        style={{
-          width: "150px",
-        }}
-        src={defaultImage}
+        style={ {
+          width: "85%",
+        } }
+        src={ defaultImage }
         alt="default avatar"
       />
     </div>
