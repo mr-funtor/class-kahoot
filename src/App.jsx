@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 //Pages
 import GamePinPage from "./pages/GamePage/GamePinPage";
 import NicknamePage from "./pages/Nickname/NicknamePage";
-import CustomInput from "./components/CustomInput/CustomInput";
 import PlayerWaiting from "./pages/PlayerWaiting";
 import Home from "./pages/homePage/Home";
 

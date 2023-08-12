@@ -4,8 +4,9 @@ import userAvi from "../../assets/avatars/avatar1.svg";
 import { useState } from "react";
 import PopUpModal from "../../components/PopUpModal";
 import ModalContextProvider from "../../context/ModalContext";
-import Images from "../../components/PopUpModal/Images";
 import { BiSolidPencil } from "react-icons/bi";
+import DefaultImage from "../../components/PopUpModal/DefaultImage";
+import { LoadingDots } from '../../components';
 
 const PlayerWaiting = () => {
     const [playerName] = useState("Janie123");
@@ -13,39 +14,38 @@ const PlayerWaiting = () => {
 
     return (
         <ModalContextProvider>
-
             <div className={ styles.PlayerWaiting }>
                 <div className={ styles.PlayerWaitingContent }>
-                    <LoadingSpinner size={ '200px' }>
-                        {
-                            userAvi ?
-                                <div className={ styles.userAviBox }>
-                                    <button
-                                        className={ styles.chooseAvi }
-                                        onClick={ () => {
-                                            setIsOpen(true)
-                                        } }
-                                    >
-                                        <BiSolidPencil style={ { color: '#0E0132' } } />
-                                    </button>
-                                    <Images />
-                                </div>
-                                :
-                                <p className={ styles.wait }>Please wait...</p>
-                        }
+                    <LoadingSpinner size={ "200px" }>
+                        { userAvi ? (
+                            <div className={ styles.userAviBox }>
+                                <button
+                                    className={ styles.chooseAvi }
+                                    onClick={ () => {
+                                        setIsOpen(true);
+                                    } }
+                                >
+                                    <BiSolidPencil style={ { color: '#0e0132' } } />
+                                </button>
+                                <DefaultImage />
+                            </div>
+                        ) : (
+                            <p className={ styles.wait }>Please wait...</p>
+                        ) }
                     </LoadingSpinner>
 
                     <h2 className={ styles.playerNN }>{ playerName }</h2>
 
-                    <p className={ styles.desc }>Kindly wait for other <br />
+                    <p className={ styles.desc }>
+                        Kindly wait for other <br />
                         players to join in
-                        <span className={ `${styles.dot} ${styles.dot1}` }> .</span> <span className={ `${styles.dot} ${styles.dot2}` }>.</span> <span className={ `${styles.dot} ${styles.dot3}` }>.</span>
+                        <LoadingDots />
                     </p>
                 </div>
+
                 { isOpen && <PopUpModal setIsOpen={ setIsOpen } /> }
             </div>
-
-        </ModalContextProvider >
+        </ModalContextProvider>
     );
 };
 export default PlayerWaiting;
