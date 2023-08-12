@@ -13,14 +13,14 @@ const Home = () => {
             image: icon,
             user: "Host",
             text: "Create a room",
-            pagelink: '/createRoom'
+            linkto: '/createRoom'
         },
         {
             icon: logo,
             image: iconTwo,
             user: "Join",
             text: "Join a room",
-            pagelink: '/gamePin'
+            linkto: '/gamePin'
         }
     ]
 
@@ -42,7 +42,7 @@ const Home = () => {
                                 <div className={ style.imageDiv }><img src={ cards.image } alt="" /></div>
                                 <div className={ style.user }>{ cards.user }</div>
                                 <div className={ style.link }>
-                                    <Link to={ cards.pageLink }>{ cards.text }</Link>
+                                    <Link to={ cards.linkto }>{ cards.text }</Link>
                                 </div>
 
                             </div>
