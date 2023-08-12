@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import style from "./Homepage.module.css";
 import logo from "../../assets/Ellipse 12.svg"
 import icon from "../../assets/Group 27.svg"
@@ -10,13 +12,15 @@ const Home = () => {
             icon: logo,
             image: icon,
             user: "Host",
-            text: "Create a room"
+            text: "Create a room",
+            pagelink: '/createRoom'
         },
         {
             icon: logo,
             image: iconTwo,
             user: "Join",
-            text: "Join a room"
+            text: "Join a room",
+            pagelink: '/gamePin'
         }
     ]
 
@@ -38,7 +42,7 @@ const Home = () => {
                                 <div className={ style.imageDiv }><img src={ cards.image } alt="" /></div>
                                 <div className={ style.user }>{ cards.user }</div>
                                 <div className={ style.link }>
-                                    <a href="">{ cards.text }</a>
+                                    <Link to={ cards.pageLink }>{ cards.text }</Link>
                                 </div>
 
                             </div>
