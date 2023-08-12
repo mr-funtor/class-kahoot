@@ -1,11 +1,11 @@
 import LoadingSpinner from "../../components/LoadingSpinner";
 import styles from "./PlayerWaiting.module.css";
 import userAvi from "../../assets/avatars/avatar1.svg";
-import editIcon from "../../assets/icons/pen.svg";
 import { useState } from "react";
 import PopUpModal from "../../components/PopUpModal";
 import ModalContextProvider from "../../context/ModalContext";
 import Images from "../../components/PopUpModal/Images";
+import { BiSolidPencil } from "react-icons/bi";
 
 const PlayerWaiting = () => {
     const [playerName] = useState("Janie123");
@@ -26,7 +26,7 @@ const PlayerWaiting = () => {
                                             setIsOpen(true)
                                         } }
                                     >
-                                        <img src={ editIcon } className={ styles.editIcon } alt="Select avatar" />
+                                        <BiSolidPencil style={ { color: '#0E0132' } } />
                                     </button>
                                     <Images />
                                 </div>
@@ -42,8 +42,6 @@ const PlayerWaiting = () => {
                         <span className={ `${styles.dot} ${styles.dot1}` }> .</span> <span className={ `${styles.dot} ${styles.dot2}` }>.</span> <span className={ `${styles.dot} ${styles.dot3}` }>.</span>
                     </p>
                 </div>
-
-
                 { isOpen && <PopUpModal setIsOpen={ setIsOpen } /> }
             </div>
 
