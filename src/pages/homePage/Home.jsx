@@ -1,10 +1,6 @@
 import { Link } from 'react-router-dom'
-
 import style from "./Homepage.module.css";
-import logo from "../../assets/Ellipse 12.svg"
-import icon from "../../assets/Group 27.svg"
-import iconTwo from "../../assets/Group 27 (1).svg"
-
+import { logo, icon, iconTwo } from '../../assets';
 
 const Home = () => {
     let cardItems = [
@@ -13,21 +9,20 @@ const Home = () => {
             image: icon,
             user: "Host",
             text: "Create a room",
-            pagelink: '/createRoom'
+            linkto: '/createRoom'
         },
         {
             icon: logo,
             image: iconTwo,
             user: "Join",
             text: "Join a room",
-            pagelink: '/gamePin'
+            linkto: '/gamePin'
         }
     ]
 
-
     return (
         <>
-            <div className={ style.homePage }>
+            <div className={ style.home }>
                 <h1>Welcome To Clahoot</h1>
                 <div className={ style.cardDiv }>
                     { cardItems.map((cards, index) => {
@@ -42,7 +37,7 @@ const Home = () => {
                                 <div className={ style.imageDiv }><img src={ cards.image } alt="" /></div>
                                 <div className={ style.user }>{ cards.user }</div>
                                 <div className={ style.link }>
-                                    <Link to={ cards.pageLink }>{ cards.text }</Link>
+                                    <Link to={ cards.linkto }>{ cards.text }</Link>
                                 </div>
 
                             </div>
@@ -55,5 +50,4 @@ const Home = () => {
 
     )
 }
-
 export default Home
