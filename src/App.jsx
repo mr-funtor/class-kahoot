@@ -9,7 +9,6 @@ import PlayerWaiting from "./pages/PlayerWaiting";
 
 import CustomInput from "./components/CustomInput/CustomInput";
 import Home from "./pages/homePage/Home";
-import PlayerWaiting from "./pages/PlayerWaiting";
 import Home from "./pages/homePage/Home";
 
 
