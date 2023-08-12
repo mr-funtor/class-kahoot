@@ -13,7 +13,7 @@ import img11 from "./avatars/einsteinTongue.svg";
 import img12 from "./avatars/fox.svg";
 import img13 from "./avatars/geisha.svg";
 import img14 from "./avatars/glassesGranny.svg";
-import img15 from "./avatars/avatar1.svg";
+import img15 from "./avatars/girlInShades.png";
 import img16 from "./avatars/hijab.svg";
 
 // icons
