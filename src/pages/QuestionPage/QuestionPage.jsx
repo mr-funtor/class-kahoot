@@ -32,7 +32,7 @@ const QuestionPage = () => {
   };
 
   return (
-    <div className="App">
+    <div className="questionContainer">
       <div className="timerContainer">
         <p className="questionNum">Question 1</p>
         <div className="progressBar">
