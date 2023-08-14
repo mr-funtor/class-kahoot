@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "../../App.css";
 import "./timer.css";
 import "./questionBox.css";
-// import style from "./answerOptions.module.css";
 
 const QuestionPage = () => {
   const [progress, setProgress] = useState(0);
