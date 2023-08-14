@@ -27,8 +27,8 @@ const Home = () => {
         <div className={style.cardDiv}>
           {cardItems.map((cards, index) => {
             return (
-              <Link to={cards.linkto} className={style.theCards}>
-                <div className={style.theCards} key={index} {...cards}>
+              <Link key={index} to={cards.linkto} className={style.theCards}>
+                <div className={style.theCards}  {...cards}>
                   <div className={style.iconDiv}>
                     <div className={style.circle}> </div>
                   </div>
