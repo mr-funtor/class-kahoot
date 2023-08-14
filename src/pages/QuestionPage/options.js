@@ -2,23 +2,23 @@ import style from "./answerOptions.module.css";
 const options = [
   {
     id: "A.",
-    value: "Charles Monroe",
-    backgroundColor: `${style.red}`,
+    value: "A. Charles Monroe",
+    backgroundColor: `${style.purple}`,
   },
   {
     id: "B.",
-    value: "Wale Sodiya",
-    backgroundColor: "red",
+    value: "B. Wale Sodiya",
+    backgroundColor: `${style.blue}`,
   },
   {
     id: "C.",
-    value: "Funty Dev",
-    backgroundColor: "green",
+    value: "C. Funty Dev",
+    backgroundColor: `${style.pink}`,
   },
   {
     id: "D.",
-    value: "Olufunto Oyewole",
-    backgroundColor: "yellow",
+    value: "D. Olufunto Oyewole",
+    backgroundColor: `${style.yellow}`,
   },
 ];
 export default options;
