@@ -11,6 +11,14 @@ body {
   font-size: 1.75rem;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
   color: white;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
