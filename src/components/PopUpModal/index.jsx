@@ -8,8 +8,8 @@ import { useContext } from "react";
 
 const PopUpModal = ({ setIsOpen }) => {
   // imports from modal context
-  const { avatars, selectedImageIndex, handleImageSelection } =
-    useContext(ModalContext);
+  const { avatars, selectedImageIndex, handleImageSelection } = useContext(ModalContext);
+
 
   return (
     <>
