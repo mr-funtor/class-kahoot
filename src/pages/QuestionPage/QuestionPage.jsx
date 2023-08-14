@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from "react";
-import "../App.css";
+import "../../App.css";
 import "./timer.css";
 import "./questionBox.css";
-import "./answerOptions.css";
-import { CustomButton } from "../components";
-// import options from "./options";
+// import style from "./answerOptions.module.css";
 
 const QuestionPage = () => {
   const [progress, setProgress] = useState(0);
-  // const [question, setQuestion] = useState("");
 
   //Creating the Timer function
   useEffect(() => {
@@ -23,10 +20,12 @@ const QuestionPage = () => {
 
   //Changing the color according to time left
   const getProgressBarColor = (progress) => {
-    if (progress < 50) {
+    if (progress < 40) {
       return "green";
-    } else if (progress < 90) {
+    } else if (progress < 70) {
       return "yellow";
+    } else if (progress < 95) {
+      return "orange";
     } else {
       return "red";
     }
@@ -44,18 +43,9 @@ const QuestionPage = () => {
         </div>
       </div>
 
-      <div
-        className="questionBox"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <p style={{ fontSize: "1.3rem" }}>
-          What is the full name of your instructor?
-        </p>
-      </div>
+      <section className="questionBox">
+        <p className="question">What is the full name of your instructor?</p>
+      </section>
 
       <div className="answerOptions">
         <h1>Testing</h1>
