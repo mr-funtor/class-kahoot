@@ -65,7 +65,7 @@ const QuestionPage = () => {
         <p className="question">What is the full name of your instructor?</p>
       </section>
 
-      <div>{options.map(optionMap)}</div>
+      <div className={style.optionDiv}>{options.map(optionMap)}</div>
     </div>
   );
 };

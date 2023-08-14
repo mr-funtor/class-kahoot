@@ -1,13 +1,25 @@
-.red {
-  background-color: rgb(216, 83, 21);
+.purple {
+  background-color: hsla(255, 64%, 66%, 1);
+  height: 7rem;
 }
 
 .blue {
-  background-color: blue;
+  background-color: hsla(191, 95%, 46%, 1);
+  height: 7rem;
 }
-.black {
-  background-color: black;
+.yellow {
+  background-color: hsla(35, 89%, 59%, 1);
+  height: 7rem;
 }
-.green {
-  background-color: green;
+.pink {
+  background-color: hsla(302, 94%, 51%, 1);
+  height: 7rem;
+}
+.optionDiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* outline: solid 5px white; */
+  width: 70vw;
+  column-gap: 1.5rem;
+  row-gap: 0.5rem;
 }
