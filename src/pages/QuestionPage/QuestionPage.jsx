@@ -3,12 +3,6 @@ import "./timer.css";
 import "./questionBox.css";
 import options from "./options";
 import CustomButton from "../../components/CustomButton";
-import style from "./answerOptions.module.css";
-
-// import { CustomButton } from "../../components/CustomButton";
-
-// console.log(optionsChoice);
-
 // import style from "./answerOptions.module.css";
 
 const QuestionPage = () => {
