@@ -19,7 +19,7 @@
   display: grid;
   place-items: center;
   border-radius: 50%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .userAvi {
