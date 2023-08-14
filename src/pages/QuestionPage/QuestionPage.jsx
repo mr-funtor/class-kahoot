@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "../../App.css";
 import "./timer.css";
 import "./questionBox.css";
 import options from "./options";
