@@ -5,10 +5,10 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 //Pages
 import GamePinPage from "./pages/GamePage/GamePinPage";
 import NicknamePage from "./pages/Nickname/NicknamePage";
-<<<<<<<<< Temporary merge branch 1
-=========
-import CustomInput from "./components/CustomInput/CustomInput";
->>>>>>>>> Temporary merge branch 2
+import PlayerWaiting from "./pages/PlayerWaiting";
+import Home from "./pages/homePage/Home";
+
+
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
         <Link to="nickname">Nickname page</Link>
         <Link to="playerWaiting">Player waiting page</Link>
         <Routes>
+          <Route path="/" element={ <Home /> } />
           <Route path="/gamePin" element={ <GamePinPage /> } />
           <Route path="/nickName" element={ <NicknamePage /> } />
           <Route path="/playerWaiting" element={ <PlayerWaiting /> } />
