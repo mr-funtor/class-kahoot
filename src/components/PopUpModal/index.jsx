@@ -8,8 +8,8 @@ import { useContext } from "react";
 
 const PopUpModal = ({ setIsOpen }) => {
   // imports from modal context
-  const { avatars, selectedImageIndex, handleImageSelection } =
-    useContext(ModalContext);
+  const { avatars, selectedImageIndex, handleImageSelection } = useContext(ModalContext);
+
 
   return (
     <>
@@ -22,7 +22,7 @@ const PopUpModal = ({ setIsOpen }) => {
 
           {/* // modal and it's contents */}
 
-          {/* the X icon on the opened modal. It closes the modal */}
+          {/* the X icon on the opened modal closes the modal */}
           <button className={styles.closeBtn} onClick={() => setIsOpen(false)}>
             <RiCloseLine style={{ marginBottom: "-3px" }} />
           </button>
