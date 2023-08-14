@@ -3,7 +3,7 @@ import "./timer.css";
 import "./questionBox.css";
 import options from "./options";
 import CustomButton from "../../components/CustomButton";
-// import style from "./answerOptions.module.css";
+import style from "./answerOptions.module.css";
 
 const QuestionPage = () => {
   const [progress, setProgress] = useState(0);
@@ -38,7 +38,7 @@ const QuestionPage = () => {
       <CustomButton
         key={item.id}
         buttonText={item.value}
-        containerStyle={item.backgroundColor}
+        containerStyle={`${style.default} ${item.backgroundColor}`}
       />
     );
   }

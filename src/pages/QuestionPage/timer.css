@@ -4,6 +4,7 @@
   place-items: center;
   margin: auto;
   height: 100vh;
+  margin-top: -3rem;
 }
 
 .timerContainer {
