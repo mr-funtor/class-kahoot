@@ -2,6 +2,14 @@ import React, { useState, useEffect } from "react";
 import "../../App.css";
 import "./timer.css";
 import "./questionBox.css";
+import options from "./options";
+import CustomButton from "../../components/CustomButton";
+import style from "./answerOptions.module.css";
+
+// import { CustomButton } from "../../components/CustomButton";
+
+// console.log(optionsChoice);
+
 // import style from "./answerOptions.module.css";
 
 const QuestionPage = () => {
@@ -31,6 +39,17 @@ const QuestionPage = () => {
     }
   };
 
+  //Mapping the options into the CustomButton component
+  function optionMap(item) {
+    return (
+      <CustomButton
+        key={item.id}
+        buttonText={item.value}
+        containerStyle={item.backgroundColor}
+      />
+    );
+  }
+
   return (
     <div className="questionContainer">
       <div className="timerContainer">
@@ -47,9 +66,7 @@ const QuestionPage = () => {
         <p className="question">What is the full name of your instructor?</p>
       </section>
 
-      <div className="answerOptions">
-        <h1>Testing</h1>
-      </div>
+      <div>{options.map(optionMap)}</div>
     </div>
   );
 };
