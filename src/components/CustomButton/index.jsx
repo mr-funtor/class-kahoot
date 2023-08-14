@@ -1,24 +1,22 @@
-import styles from "./CustomButton.module.css"
-
-
+import styles from "./CustomButton.module.css";
 
 //Example
-{/* <CustomButton
+{
+  /* <CustomButton
       buttonText={"lala"}
       containerStyle={styles.container}
-    /> */}
-
-
-
-const CustomButton = ({ onClick, containerStyle, buttonText}) => {
-    return (
-        <button
-            className={`${styles.btnBody} ${containerStyle && containerStyle}`}
-            onClick={onClick}
-        >
-            {buttonText}
-        </button>
-    )
+    /> */
 }
+
+const CustomButton = ({ onClick, containerStyle, buttonText }) => {
+  return (
+    <button
+      className={`${styles.btnBody} ${containerStyle && containerStyle}`}
+      onClick={onClick}
+    >
+      {buttonText}
+    </button>
+  );
+};
 
 export default CustomButton;

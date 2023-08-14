@@ -7,8 +7,7 @@ import GamePinPage from "./pages/GamePage/GamePinPage";
 import NicknamePage from "./pages/Nickname/NicknamePage";
 import PlayerWaiting from "./pages/PlayerWaiting";
 import Home from "./pages/homePage/Home";
-
-
+import QuestionPage from "./pages/QuestionPage/QuestionPage";
 
 function App() {
   return (
@@ -17,11 +16,13 @@ function App() {
         <Link to="gamePin">Game pin page</Link>
         <Link to="nickname">Nickname page</Link>
         <Link to="playerWaiting">Player waiting page</Link>
+        <Link to="questions">Question Page</Link>
         <Routes>
-          <Route path="/" element={ <Home /> } />
-          <Route path="/gamePin" element={ <GamePinPage /> } />
-          <Route path="/nickName" element={ <NicknamePage /> } />
-          <Route path="/playerWaiting" element={ <PlayerWaiting /> } />
+          <Route path="/" element={<Home />} />
+          <Route path="/gamePin" element={<GamePinPage />} />
+          <Route path="/nickName" element={<NicknamePage />} />
+          <Route path="/playerWaiting" element={<PlayerWaiting />} />
+          <Route path="/questions" element={<QuestionPage />} />
         </Routes>
       </Router>
     </div>
