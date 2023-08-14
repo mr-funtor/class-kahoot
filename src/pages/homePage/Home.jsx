@@ -1,57 +1,58 @@
-
-
+import { Link } from "react-router-dom";
 import style from "./Homepage.module.css";
-import logo from "../../assets/Ellipse 12.svg"
-import icon from "../../assets/Group 27.svg"
-import iconTwo from "../../assets/Group 27 (1).svg"
-
+import { logo, icon, iconTwo } from "../../assets";
 
 const Home = () => {
- let cardItems = [
+  let cardItems = [
     {
-        icon: logo,
-        image: icon,
-        user: "Host",
-        text: "Create a room"
+      icon: logo,
+      image: icon,
+      user: "Host",
+      text: "Create a room",
+      linkto: "/createRoom",
     },
     {
-        icon: logo,
-        image: iconTwo,
-        user: "Join",
-        text: "Join a room"
-    }
- ]
-
+      icon: logo,
+      image: iconTwo,
+      user: "Join",
+      text: "Join a room",
+      linkto: "/gamePin",
+    },
+  ];
 
   return (
     <>
-    <div className={style.App}>
-        <h1>Welcome To Clahoot</h1>
+      <div className={style.home}>
+        <h1 className={style.head}>Welcome To Clahoot!</h1>
         <div className={style.cardDiv}>
-           {cardItems.map((cards, index) => {
+          {cardItems.map((cards, index) => {
             return (
-            <div
-                className={style.theCards}
-                key={index}
-                {...cards}
-            >
-            {/* <div className={style.iconDiv}><img src={cards.icon} alt="" /></div> */}
-            <div className={style.iconDiv}> <div className={style.circle}> </div></div>
-            <div className={style.imageDiv}><img src={cards.image} alt="" /></div>
-            <div className={style.user}>{cards.user}</div>
-            <div className={style.link}>
-                <a href="">{cards.text}</a>
-            </div>
+              <Link to={cards.linkto} className={style.theCards}>
+                <div className={style.theCards} key={index} {...cards}>
+                  <div className={style.iconDiv}>
+                    <div className={style.circle}> </div>
+                  </div>
 
-            </div>
-            )
-              
-            })}
+                  <div className={style.imageDiv}>
+                    <img src={cards.image} alt="" />
+                  </div>
+
+                  <div className={style.user}>
+                    <p>{cards.user}</p>
+                  </div>
+
+                  <div className={style.link}>
+                    <p>{cards.text}</p>
+                  </div>
+
+                  </div>
+                <div/>
+              </Link>
+            );
+          })}
         </div>
-    </div>
+      </div>
     </>
-
-  )
-}
-
-export default Home
+  );
+};
+export default Home;
