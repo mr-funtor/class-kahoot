@@ -23,24 +23,31 @@ const Home = () => {
   return (
     <>
       <div className={ style.home }>
-        <h1>Welcome To Clahoot</h1>
+        <h1 className={ style.head }>Welcome To Clahoot!</h1>
         <div className={ style.cardDiv }>
           { cardItems.map((cards, index) => {
             return (
-              <div className={ style.theCards } key={ index } { ...cards }>
-                {/* <div className={style.iconDiv}><img src={cards.icon} alt="" /></div> */ }
-                <div className={ style.iconDiv }>
-                  { " " }
-                  <div className={ style.circle }> </div>
+              <Link to={ cards.linkto } className={ style.theCards }>
+                <div className={ style.theCards } key={ index } { ...cards }>
+                  <div className={ style.iconDiv }>
+                    <div className={ style.circle }> </div>
+                  </div>
+
+                  <div className={ style.imageDiv }>
+                    <img src={ cards.image } alt="" />
+                  </div>
+
+                  <div className={ style.user }>
+                    <p>{ cards.user }</p>
+                  </div>
+
+                  <div className={ style.link }>
+                    <p>{ cards.text }</p>
+                  </div>
+
                 </div>
-                <div className={ style.imageDiv }>
-                  <img src={ cards.image } alt="" />
-                </div>
-                <div className={ style.user }>{ cards.user }</div>
-                <div className={ style.link }>
-                  <Link to={ cards.linkto }>{ cards.text }</Link>
-                </div>
-              </div>
+                <div />
+              </Link>
             );
           }) }
         </div>
