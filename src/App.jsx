@@ -29,3 +29,5 @@ function App() {
 }
 
 export default App;
+
+// git commit -am 'Conflicts resolved'
