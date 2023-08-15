@@ -13,10 +13,10 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Link to="gamePin">Game pin page</Link>
+        {/* <Link to="gamePin">Game pin page</Link>
         <Link to="nickname">Nickname page</Link>
         <Link to="playerWaiting">Player waiting page</Link>
-        <Link to="questions">Question Page</Link>
+        <Link to="questions">Question Page</Link> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/gamePin" element={<GamePinPage />} />
