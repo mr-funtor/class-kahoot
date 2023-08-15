@@ -19,8 +19,8 @@ function App() {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-evenly",
-            padding: '20px',
-            boxShadow: '2px 2px 12px 12px rgba(0,0,0,0.2)',
+            padding: "20px",
+            boxShadow: "2px 2px 12px 12px rgba(0,0,0,0.2)",
           }}
         >
           <Link to="/">home page</Link>
