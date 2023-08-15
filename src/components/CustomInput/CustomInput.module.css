@@ -1,27 +1,13 @@
 .inputContainer {
-  margin-top: 1.5rem;
-
-  background: rgba(165, 130, 224, 0.63);
-
-  width: 26.5rem;
-
-  height: 3.1rem;
-
-  border-radius: 0.4rem;
-
-  border-color: transparent;
-
-  text-align: center;
-
-  font-size: 1.3rem;
-
-  outline: none;
+    width: 100%;
+    padding: .6rem 2rem;
+    border-radius: 0.4rem; 
+    outline: none;
+    border-color: transparent;
+    background: rgba(165, 130, 224, 0.63);
+    text-align: center;
+    font-size: 1.3rem;
+    
 }
 
-.inputContainer::placeholder {
-  color: rgba(14, 1, 50, 0.63);
 
-  font-size: 1.3rem;
-
-  font-weight: 500;
-}
