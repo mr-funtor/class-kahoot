@@ -1,75 +1,53 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 style.header {
+=======
+.header {
+>>>>>>> f1d25bd (Changes Done)
   background: #0e0132;
-  width: 90rem;
-  height: 64rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 >>>>>>> 0d45f9f (changes in gamepin)
 
 .kahoot {
   color: #fff;
   font-family: Palanquin Dark;
-  font-size: 3rem;
-  font-style: normal;
+  font-size: 3.5rem;
   font-weight: 700;
-  line-height: normal;
-  text-align: center;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-.box {
-  border: 2px solid white;
-  width: 29rem;
-  height: 11rem;
-  background-color: #fff;
-  display: grid;
-  place-items: center;
-  margin: auto;
-  padding: 1em;
-}
-.kahootBtn {
-  width: 80%;
-  margin-bottom: 2rem;
 }
 
-.kahootInput {
-  width: 100%;
-  outline: none;
-  margin-top: 1.5rem;
-  color: rgba(14, 1, 50, 0.63);
-  text-align: center;
-  font-family: Palanquin Dark;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+.box {
+  width: 30rem;
+  background-color: #fff;
+  padding: 2rem 2rem;
+}
+
+.btnKahoot {
+  font-size: 1.4rem;
+  font-weight: 700;
+  background: #0e0132 !important;
+}
+
+.inputContainer{
+  font-weight: 500 !important;
+  background-color: #D6CDF1 !important;
+  color: #0e0132 !important;
+}
+.inputContainer::placeholder{
+  color: #0e0132 !important;
+  font-weight: 700;
 }
 
 @media (max-width: 480px) {
-  style.header {
-    width: 24rem;
-    height: 64rem;
-    background: #0e0132;
-  }
-  .kahoot {
-    width: 17rem;
-    height: 3.63;
-    flex-shrink: 0;
-    text-align: center;
-    justify-content: center;
-    margin-top: 5rem;
-    margin-left: 1.5rem;
-    margin-bottom: 1rem;
-  }
   .box {
     width: 17rem;
-    height: 7rem;
-    flex-shrink: 0;
-    padding: 1em;
   }
-  .kahootBtn {
-    width: 10px;
-    margin-bottom: 1rem;
+  .kahoot {
+    font-size: 2.5rem;
   }
 }

@@ -6,6 +6,7 @@ import CustomInput from "../../components/CustomInput/CustomInput";
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 const GamePinPage = ({ buttonText }) => {
 =======
 const GamePinPage = () => {
@@ -19,10 +20,15 @@ const GamePinPage = () => {
 
   }
 >>>>>>> e2f3e80 (changes made to gamePin)
+=======
+const GamePinPage = () => {
+ 
+>>>>>>> f1d25bd (Changes Done)
   return (
     <div className={style.header}>
-      <h1 className={style.kahoot}>Clahoot!</h1>
+       <h1 className={style.kahoot}>Clahoot!</h1>
       <div className={style.box}>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <CustomButton
           style={{ border: "10px solid red" }}
@@ -34,6 +40,11 @@ const GamePinPage = () => {
         
         />
         <CustomButton  buttonText={'Activate'} containerStyle={style.kahootBtn} onClick={ActivateClick}
+=======
+     
+        <CustomInput placeholder={"Game Pin"} customStyle ={style.inputContainer} />
+        <CustomButton  buttonText={'Activate'} containerStyle={style.btnKahoot} 
+>>>>>>> f1d25bd (Changes Done)
         
         />
         
