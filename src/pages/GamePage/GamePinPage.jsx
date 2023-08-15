@@ -4,7 +4,7 @@ import CustomButton from "../../components/CustomButton";
 
 const GamePinPage = ({ buttonText }) => {
   return (
-    <div>
+    <div className={style.header}>
       <h1 className={style.kahoot}>Clahoot!</h1>
       <div className={style.box}>
         <CustomButton
