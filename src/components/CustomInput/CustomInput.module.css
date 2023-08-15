@@ -1,4 +1,5 @@
 .inputContainer {
+<<<<<<< HEAD
     width: 100%;
     padding: .6rem 2rem;
     border-radius: 0.4rem; 
@@ -11,3 +12,27 @@
 }
 
 
+=======
+
+    width: 100%;
+
+    padding: .6rem 2rem;
+
+    border-radius: 0.4rem;
+
+    outline: none;
+
+    border: 2px solid transparent;
+
+    background: rgba(165, 130, 224, 0.63);
+
+    text-align: center;
+
+    font-size: 1.3rem;
+
+   
+
+}
+
+ 
+>>>>>>> ddc42f635614ce35f805b7cba14e54ce0349adc5

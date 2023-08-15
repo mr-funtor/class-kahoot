@@ -1,54 +1,28 @@
 import { useState } from "react";
+
 import React from "react";
+
 import style from "./gamePin.module.css";
+
 import CustomButton from "../../components/CustomButton";
+
 import CustomInput from "../../components/CustomInput/CustomInput";
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-const GamePinPage = ({ buttonText }) => {
-=======
 const GamePinPage = () => {
->>>>>>> 8d55428 (updated repo)
-=======
-
-
-const GamePinPage = () => {
-  const ActivateClick =()=> {
-    console.log ("boy ")
-
-  }
->>>>>>> e2f3e80 (changes made to gamePin)
-=======
-const GamePinPage = () => {
- 
->>>>>>> f1d25bd (Changes Done)
   return (
     <div className={style.header}>
-       <h1 className={style.kahoot}>Clahoot!</h1>
+      <h1 className={style.kahoot}>Clahoot!</h1>
+
       <div className={style.box}>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <CustomButton
-          style={{ border: "10px solid red" }}
-          buttonText={"Activate"}
-        />
-=======
         <CustomInput
-        placeholder={"Game pin"} customStyle={style.kahootInput}
-        
+          placeholder={"Game Pin"}
+          customStyle={style.inputContainer}
         />
-        <CustomButton  buttonText={'Activate'} containerStyle={style.kahootBtn} onClick={ActivateClick}
-=======
-     
-        <CustomInput placeholder={"Game Pin"} customStyle ={style.inputContainer} />
-        <CustomButton  buttonText={'Activate'} containerStyle={style.btnKahoot} 
->>>>>>> f1d25bd (Changes Done)
-        
+
+        <CustomButton
+          buttonText={"Activate"}
+          containerStyle={style.btnKahoot}
         />
-        
->>>>>>> 8d55428 (updated repo)
       </div>
     </div>
   );

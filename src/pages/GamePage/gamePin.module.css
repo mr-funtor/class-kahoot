@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 style.header {
 =======
@@ -11,12 +12,33 @@ style.header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+=======
+.header {
+
+  background: #0e0132;
+
+  height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+
+>>>>>>> ddc42f635614ce35f805b7cba14e54ce0349adc5
 }
 >>>>>>> 0d45f9f (changes in gamepin)
 
+ 
+
 .kahoot {
+
   color: #fff;
+
   font-family: Palanquin Dark;
+<<<<<<< HEAD
   font-size: 3.5rem;
   font-weight: 700;
 }
@@ -49,5 +71,75 @@ style.header {
   }
   .kahoot {
     font-size: 2.5rem;
-  }
+=======
+
+  font-size: 3.5rem;
+
+  font-weight: 700;
+
 }
+
+ 
+
+.box {
+
+  width: 30rem;
+
+  background-color: #fff;
+
+  padding: 2rem 2rem;
+
+}
+
+ 
+
+.btnKahoot {
+
+  font-size: 1.4rem;
+
+  font-weight: 700;
+
+  background: #0e0132 !important;
+
+}
+
+ 
+
+.inputContainer{
+
+  font-weight: 500 !important;
+
+  background-color: #D6CDF1 !important;
+
+  color: #0e0132 !important;
+
+}
+
+.inputContainer::placeholder{
+
+  color: #0e0132 !important;
+
+  font-weight: 700;
+
+}
+
+ 
+
+@media (max-width: 480px) {
+
+  .box {
+
+    width: 17rem;
+
+>>>>>>> ddc42f635614ce35f805b7cba14e54ce0349adc5
+  }
+
+  .kahoot {
+
+    font-size: 2.5rem;
+
+  }
+
+}
+
+ 

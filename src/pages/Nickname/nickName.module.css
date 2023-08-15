@@ -1,4 +1,5 @@
 .container{
+<<<<<<< HEAD
   background: #0e0132;
   height: 100vh;
   display: flex;
@@ -46,3 +47,99 @@
     font-size: 2.5rem;
   }
 } 
+=======
+
+  background: #0e0132;
+
+  height: 100vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+ 
+
+.kahootDiv {
+
+  width: 30rem;
+
+  border-radius: 6px;
+
+  background: #fff;
+
+  padding: 2rem 2rem;
+
+ 
+
+}
+
+.head {
+
+  color: #fff;
+
+  font-family: Palanquin Dark;
+
+  font-size: 3.5rem;
+
+  text-align: center;
+
+}
+
+ 
+
+.btnPin{
+
+  font-size: 1.4rem;
+
+  font-weight: 700;
+
+  background: #0E0132;
+
+}
+
+ 
+
+.inputPin {
+
+  background: #D6CDF1 !important;
+
+  font-weight: 500 !important;
+
+  color: #0E0132 !important;
+
+}
+
+ 
+
+.inputPin::placeholder {
+
+  color:#0E0132 ;
+
+  font-weight: 700;
+
+}
+
+ 
+
+ @media only screen and (max-width: 600px) {
+
+  .kahootDiv {
+
+    width: 17rem;
+
+  }
+
+  .head {
+
+    font-size: 2.5rem;
+
+  }
+
+}
+>>>>>>> ddc42f635614ce35f805b7cba14e54ce0349adc5
