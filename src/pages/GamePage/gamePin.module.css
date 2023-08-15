@@ -15,29 +15,39 @@ style.header {
   font-weight: 700;
   line-height: normal;
   text-align: center;
-  justify-content: center;  
+  justify-content: center;
   margin-bottom: 1rem;
 }
- .box {
-   border: 2px solid white;
+.box {
+  border: 2px solid white;
   width: 29rem;
   height: 11rem;
   background-color: #fff;
   display: grid;
   place-items: center;
-   margin: auto; 
+  margin: auto;
   padding: 1em;
-} 
-.kahootBtn{
-    /* margin-top: 50px; */
-    width: 80%;
 }
-.kahootInput{
-    width: 20rem;
+.kahootBtn {
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.kahootInput {
+  width: 100%;
+  outline: none;
+  margin-top: 1.5rem;
+  color: rgba(14, 1, 50, 0.63);
+  text-align: center;
+  font-family: Palanquin Dark;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 @media (max-width: 480px) {
-    style.header {
+  style.header {
     width: 24rem;
     height: 64rem;
     background: #0e0132;
@@ -53,9 +63,13 @@ style.header {
     margin-bottom: 1rem;
   }
   .box {
-    width:17rem;
+    width: 17rem;
     height: 7rem;
     flex-shrink: 0;
     padding: 1em;
+  }
+  .kahootBtn {
+    width: 10px;
+    margin-bottom: 1rem;
   }
 }

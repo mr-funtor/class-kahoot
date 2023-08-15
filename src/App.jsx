@@ -5,9 +5,13 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 //Pages
 import GamePinPage from "./pages/GamePage/GamePinPage";
 import NicknamePage from "./pages/Nickname/NicknamePage";
+<<<<<<< HEAD
 import PlayerWaiting from "./pages/PlayerWaiting";
 import Home from "./pages/homePage/Home";
 import QuestionPage from "./pages/QuestionPage/QuestionPage";
+=======
+import CustomInput from "./components/CustomInput/CustomInput";
+>>>>>>> e2f3e80 (changes made to gamePin)
 
 function App() {
   return (
