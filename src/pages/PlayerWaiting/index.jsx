@@ -1,11 +1,12 @@
 import LoadingSpinner from "../../components/LoadingSpinner";
 import styles from "./PlayerWaiting.module.css";
 import userAvi from "../../assets/avatars/avatar1.svg";
-import editIcon from "../../assets/icons/pen.svg";
 import { useState } from "react";
 import PopUpModal from "../../components/PopUpModal";
 import ModalContextProvider from "../../context/ModalContext";
-import Images from "../../components/PopUpModal/Images";
+import { BiSolidPencil } from "react-icons/bi";
+import DefaultImage from "../../components/PopUpModal/DefaultImage";
+import { LoadingDots } from "../../components";
 
 const PlayerWaiting = () => {
   const [playerName] = useState("Janie123");
@@ -20,15 +21,13 @@ const PlayerWaiting = () => {
               <div className={styles.userAviBox}>
                 <button
                   className={styles.chooseAvi}
-                  onClick={() => setIsOpen(true)}
+                  onClick={() => {
+                    setIsOpen(true);
+                  }}
                 >
-                  <img
-                    src={editIcon}
-                    className={styles.editIcon}
-                    alt="Select avatar"
-                  />
+                  <BiSolidPencil style={{ color: "#0e0132" }} />
                 </button>
-                <Images/>
+                <DefaultImage />
               </div>
             ) : (
               <p className={styles.wait}>Please wait...</p>
@@ -36,10 +35,15 @@ const PlayerWaiting = () => {
           </LoadingSpinner>
 
           <h2 className={styles.playerNN}>{playerName}</h2>
-          <p className={styles.desc}>
-            Kindly wait for other <br /> players to join in!
-          </p>
+
+          {!isOpen && (
+            <p className={styles.desc}>
+              Kindly wait for other players to join in
+              <LoadingDots />
+            </p>
+          )}
         </div>
+
         {isOpen && <PopUpModal setIsOpen={setIsOpen} />}
       </div>
     </ModalContextProvider>
