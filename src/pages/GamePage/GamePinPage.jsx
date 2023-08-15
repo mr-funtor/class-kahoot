@@ -1,19 +1,43 @@
+import { useState } from "react";
+
 import React from "react";
+
 import style from "./gamePin.module.css";
+
 import CustomButton from "../../components/CustomButton";
 
-const GamePinPage = ({ buttonText }) => {
+import CustomInput from "../../components/CustomInput/CustomInput";
+
+ 
+
+const GamePinPage = () => {
+
+ 
+
   return (
-    <div>
-      <h1 className={style.kahoot}>Clahoot!</h1>
+
+    <div className={style.header}>
+
+       <h1 className={style.kahoot}>Clahoot!</h1>
+
       <div className={style.box}>
-        <CustomButton
-          style={{ border: "10px solid red" }}
-          buttonText={"Activate"}
-        />
+
+     
+
+        <CustomInput placeholder={"Game Pin"} customStyle ={style.inputContainer} />
+
+        <CustomButton  buttonText={'Activate'} containerStyle={style.btnKahoot}  />
+
+       
+
       </div>
+
     </div>
+
   );
+
 };
+
+ 
 
 export default GamePinPage;
