@@ -14,6 +14,7 @@ function App() {
     <div className="App">
       <Router>
         <nav style={{width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-evenly'}}>
+          <Link to="/">home page</Link>
           <Link to="gamePin">Game pin page</Link>
           <Link to="nickname">Nickname page</Link>
           <Link to="playerWaiting">Player waiting page</Link>
