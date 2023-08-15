@@ -13,7 +13,16 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <nav style={{width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-evenly'}}>
+        <nav
+          style={{
+            width: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-evenly",
+            padding: '20px',
+            boxShadow: '2px 2px 12px 12px rgba(0,0,0,0.2)',
+          }}
+        >
           <Link to="/">home page</Link>
           <Link to="gamePin">Game pin page</Link>
           <Link to="nickname">Nickname page</Link>
