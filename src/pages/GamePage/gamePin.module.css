@@ -15,17 +15,25 @@ style.header {
   font-weight: 700;
   line-height: normal;
   text-align: center;
-  justify-content: center;
-  margin-top: 10rem;
+  justify-content: center;  
   margin-bottom: 1rem;
 }
-.box {
-  border: 2px solid white;
+ .box {
+   border: 2px solid white;
   width: 29rem;
   height: 11rem;
   background-color: #fff;
-  margin: auto;
+  display: grid;
+  place-items: center;
+   margin: auto; 
   padding: 1em;
+} 
+.kahootBtn{
+    /* margin-top: 50px; */
+    width: 80%;
+}
+.kahootInput{
+    width: 20rem;
 }
 
 @media (max-width: 480px) {
@@ -40,13 +48,13 @@ style.header {
     flex-shrink: 0;
     text-align: center;
     justify-content: center;
-    margin-top: 10rem;
-    margin-left: 3.5rem;
+    margin-top: 5rem;
+    margin-left: 1.5rem;
     margin-bottom: 1rem;
   }
   .box {
-    width: 287px;
-    height: 122px;
+    width:17rem;
+    height: 7rem;
     flex-shrink: 0;
     padding: 1em;
   }
