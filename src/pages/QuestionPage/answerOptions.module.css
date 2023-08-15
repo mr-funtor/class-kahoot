@@ -118,5 +118,10 @@
     height: 8vmax;
     padding: 0;
     margin-top: 10px;
+    font-size: 2vmax;
+  }
+
+  .default:hover {
+    font-size: 0.85rem;
   }
 }
