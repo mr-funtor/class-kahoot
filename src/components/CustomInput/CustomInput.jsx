@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./CustomInput.module.css";
+import React from 'react'
+import style from "./CustomInput.module.css"
 
 const CustomInput = ({placeholder, text, value,onClick,customStyle}) => {
   return (
@@ -8,7 +8,7 @@ const CustomInput = ({placeholder, text, value,onClick,customStyle}) => {
       placeholder={placeholder} 
       onClick={onClick} 
       value ={value} 
-      className={`${styles.inputContainer} ${customStyle && customStyle}`}/>
+      className={`${style.inputContainer} ${customStyle && customStyle}`}/>
     </div>
   );
 };
