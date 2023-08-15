@@ -13,10 +13,12 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Link to="gamePin">Game pin page</Link>
-        <Link to="nickname">Nickname page</Link>
-        <Link to="playerWaiting">Player waiting page</Link>
-        <Link to="questions">Question Page</Link>
+        <nav style={{width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-evenly'}}>
+          <Link to="gamePin">Game pin page</Link>
+          <Link to="nickname">Nickname page</Link>
+          <Link to="playerWaiting">Player waiting page</Link>
+          <Link to="questions">Question Page</Link>
+        </nav>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/gamePin" element={<GamePinPage />} />
