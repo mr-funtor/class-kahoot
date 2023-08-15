@@ -47,7 +47,7 @@
   border-radius: 1rem;
 }
 
-.cardBottom  {
+.cardBottom {
   text-decoration: none;
   font-size: 1.3rem;
   color: hsla(0, 0%, 100%, 1);
@@ -91,8 +91,6 @@
 .imageDiv {
   height: 30%;
 }
-
-
 
 .imageDiv img {
   height: 100%;
