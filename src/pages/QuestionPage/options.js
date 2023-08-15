@@ -13,12 +13,12 @@ const options = [
   {
     id: "C.",
     value: "C. Funty Dev",
-    backgroundColor: `${style.pink}`,
+    backgroundColor: `${style.yellow}`,
   },
   {
     id: "D.",
     value: "D. Olufunto Oyewole",
-    backgroundColor: `${style.yellow}`,
+    backgroundColor: `${style.pink}`,
   },
 ];
 export default options;
