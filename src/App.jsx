@@ -14,14 +14,15 @@ function App() {
     <div className="App">
       <Router>
         <nav
-          style={{
+          style={ {
             width: "100%",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-evenly",
-            padding: "20px",
+            fontSize: "1.5rem",
+            padding: "10px",
             boxShadow: "2px 2px 12px 12px rgba(0,0,0,0.2)",
-          }}
+          } }
         >
           <Link to="/">home page</Link>
           <Link to="gamePin">Game pin page</Link>
@@ -30,11 +31,11 @@ function App() {
           <Link to="questions">Question Page</Link>
         </nav>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/gamePin" element={<GamePinPage />} />
-          <Route path="/nickName" element={<NicknamePage />} />
-          <Route path="/playerWaiting" element={<PlayerWaiting />} />
-          <Route path="/questions" element={<QuestionPage />} />
+          <Route path="/" element={ <Home /> } />
+          <Route path="/gamePin" element={ <GamePinPage /> } />
+          <Route path="/nickName" element={ <NicknamePage /> } />
+          <Route path="/playerWaiting" element={ <PlayerWaiting /> } />
+          <Route path="/questions" element={ <QuestionPage /> } />
         </Routes>
       </Router>
     </div>
