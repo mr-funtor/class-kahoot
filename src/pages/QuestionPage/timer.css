@@ -4,7 +4,7 @@
   place-items: center;
   margin: auto;
   height: 100vh;
-  margin-top: -3rem;
+  margin-top: 0.5rem;
 }
 
 .timerContainer {
@@ -20,6 +20,7 @@
 }
 
 .progressBar {
+  border-radius: 10px;
   width: 70vw;
   height: 1rem;
   background-color: hsl(0, 0%, 100%);

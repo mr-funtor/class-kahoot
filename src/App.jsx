@@ -13,16 +13,29 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Link to="gamePin">Game pin page</Link>
-        <Link to="nickname">Nickname page</Link>
-        <Link to="playerWaiting">Player waiting page</Link>
-        <Link to="questions">Question Page</Link>
+        <nav
+          style={ {
+            width: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-evenly",
+            fontSize: "1.5rem",
+            padding: "10px",
+            boxShadow: "2px 2px 12px 12px rgba(0,0,0,0.2)",
+          } }
+        >
+          <Link to="/">home page</Link>
+          <Link to="gamePin">Game pin page</Link>
+          <Link to="nickname">Nickname page</Link>
+          <Link to="playerWaiting">Player waiting page</Link>
+          <Link to="questions">Question Page</Link>
+        </nav>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/gamePin" element={<GamePinPage />} />
-          <Route path="/nickName" element={<NicknamePage />} />
-          <Route path="/playerWaiting" element={<PlayerWaiting />} />
-          <Route path="/questions" element={<QuestionPage />} />
+          <Route path="/" element={ <Home /> } />
+          <Route path="/gamePin" element={ <GamePinPage /> } />
+          <Route path="/nickName" element={ <NicknamePage /> } />
+          <Route path="/playerWaiting" element={ <PlayerWaiting /> } />
+          <Route path="/questions" element={ <QuestionPage /> } />
         </Routes>
       </Router>
     </div>
