@@ -8,6 +8,7 @@ import NicknamePage from "./pages/Nickname/NicknamePage";
 import PlayerWaiting from "./pages/PlayerWaiting";
 import Home from "./pages/homePage/Home";
 import QuestionPage from "./pages/QuestionPage/QuestionPage";
+import ResponseTrackerPage from "./pages/hostSide/responseTracker/ResponseTrackerPage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Link to="nickname">Nickname page</Link>
           <Link to="playerWaiting">Player waiting page</Link>
           <Link to="questions">Question Page</Link>
+          <Link to="responses">Response Tracker</Link>
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -35,6 +37,7 @@ function App() {
           <Route path="/nickName" element={<NicknamePage />} />
           <Route path="/playerWaiting" element={<PlayerWaiting />} />
           <Route path="/questions" element={<QuestionPage />} />
+          <Route path="/responses" element={<ResponseTrackerPage />} />
         </Routes>
       </Router>
     </div>
