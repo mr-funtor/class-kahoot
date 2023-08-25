@@ -1,7 +1,6 @@
 import { BiPlay } from "react-icons/bi";
 import { CustomButton, LoadingDots } from "../../../components";
 import styles from "./HostWaiting.module.css";
-import styled from "../../PlayerWaiting/PlayerWaiting.module.css";
 import {
   img1,
   img2,
@@ -61,7 +60,7 @@ const HostWaiting = ({ gamePin, players = [] }) => {
       {/* <div className={styles.playerSection}>
         <p>{players.length} are ready to play</p>
         {players.map((item, index) => (
-          <div>
+          <div key={index}>
             <img
               src={item.image}
               alt={`player ${index + 1}`}
@@ -77,7 +76,7 @@ const HostWaiting = ({ gamePin, players = [] }) => {
         <p><span style={{color: '#6847c4'}}>{allPlayers.length}</span> players are ready to play</p>
         <div className={styles.userAviBox}>
           {allPlayers.map((item, index) => (
-            <div>
+            <div key={index}>
               <img
                 src={item.image}
                 alt={`player ${index + 1}`}
