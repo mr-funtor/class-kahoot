@@ -6,7 +6,7 @@ import {
   img2,
   img3,
   img4,
-  img5,
+  img9,
   img6,
   img7,
   img8,
@@ -18,7 +18,7 @@ const dummyAvatars = [
   { image: img2 },
   { image: img3 },
   { image: img4 },
-  { image: img5 },
+  { image: img9 },
   { image: img6 },
   { image: img7 },
   { image: img8 },
@@ -76,7 +76,7 @@ const HostWaiting = ({ gamePin, players = [] }) => {
         <p><span style={{color: '#6847c4'}}>{allPlayers.length}</span> players are ready to play</p>
         <div className={styles.userAviBox}>
           {allPlayers.map((item, index) => (
-            <div key={index}>
+            <div className={styles.allPlayerSection} key={index}>
               <img
                 src={item.image}
                 alt={`player ${index + 1}`}
