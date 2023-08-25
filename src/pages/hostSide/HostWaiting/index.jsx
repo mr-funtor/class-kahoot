@@ -11,7 +11,6 @@ import {
   img7,
   img8,
 } from "../../../assets";
-import { useState } from "react";
 
 const HostWaiting = ({ gamePin }) => {
   const players = [
