@@ -1,3 +1,7 @@
+.pageBody {
+  height: 100vh;
+}
+
 .optionDiv {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -143,4 +147,38 @@
   .default:hover {
     font-size: 0.85rem;
   }
+}
+
+.barChart {
+  display: flex;
+  align-items: flex-end;
+  width: 40vmax;
+  height: 30rem;
+  margin: 40px auto;
+  gap: 3vmax;
+}
+
+.bar {
+  width: 30rem;
+  transition: height 0.3s ease-in-out;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-end;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.labels {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  position: absolute;
+  width: 100%;
+  bottom: 4px;
+}
+
+.checkmark {
+  margin-left: 5px;
 }
