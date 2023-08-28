@@ -8,14 +8,15 @@ import styles from "./CustomButton.module.css";
     /> */
 }
 
-const CustomButton = ({ onClick, containerStyle, buttonText }) => {
+const CustomButton = ({ onClick, containerStyle, buttonText, disabled }) => {
   return (
     <button
-      className={`${styles.btnBody} ${containerStyle && containerStyle}`}
-      onClick={onClick}
+      className={ `${styles.btnBody} ${containerStyle && containerStyle}` }
+      onClick={ onClick }
+      disabled={ disabled }
     >
-      {buttonText}
-    </button>
+      { buttonText }
+    </button >
   );
 };
 
