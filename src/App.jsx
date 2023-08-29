@@ -10,6 +10,7 @@ import Home from "./pages/homePage/Home";
 import QuestionPage from "./pages/QuestionPage/QuestionPage";
 import HostWaiting from "./pages/hostSide/HostWaiting";
 import HostLeaderBoard from "./pages/hostSide/HostLeaderBoard/HostLeaderBoard";
+import WaitingRoom from "./pages/waitingRoom/WaitingRoom";
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
           <Route path="/questions" element={<QuestionPage />} />
           <Route path='/hostwaiting' element={ <HostWaiting /> } />
           <Route path="/leaderBoard" element={<HostLeaderBoard/>}/>
+          <Route path="/waitingRoom" element={<WaitingRoom/>}/>
           {/* Note: the route is just to see how to navigate to the leaderBoard page, is not necessarily where is meant to be */}
         </Routes>
       </Router>
