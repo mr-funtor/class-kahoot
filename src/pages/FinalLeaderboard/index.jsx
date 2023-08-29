@@ -27,21 +27,42 @@ const FinalLeaderBoard = () => {
 
   const sortedPlayers = [...players].sort((a, b) => b.score - a.score);
   // console.log(sortedPlayers[0]);
-  const firstPlace = sortedPlayers[0].name;
-  const secondPlace = sortedPlayers[1].name;
-  const thirdPlace = sortedPlayers[2].name;
+  const firstPlace = {
+    name: sortedPlayers[0].name,
+    score: sortedPlayers[0].score,
+  };
+  const secondPlace = {
+    name: sortedPlayers[1].name,
+    score: sortedPlayers[1].score,
+  };
+  const thirdPlace = {
+    name: sortedPlayers[2].name,
+    score: sortedPlayers[2].score,
+  };
 
   return (
     <div className={styles.finalLeaderBoard}>
-      <img
-        style={{ width: "110px" }}
-        src={sortedPlayers[0].image}
-        alt={sortedPlayers[0].name}
-      />
+      <div>
+        <img
+          style={{ width: "110px" }}
+          src={sortedPlayers[0].image}
+          alt={sortedPlayers[0].name}
+        />
+        <p>winner!</p>
+      </div>
       <div className={styles.leaderBoard}>
-        <div className={styles.secondPlace}>{firstPlace}</div>
-        <div className={styles.winner}>{secondPlace}</div>
-        <div className={styles.thirdPlace}>{thirdPlace}</div>
+        <div className={styles.secondPlace}>
+          <p>{firstPlace.name}</p>
+          <p>{firstPlace.score}</p>
+        </div>
+        <div className={styles.winner}>
+          <p>{secondPlace.name}</p>
+          <p>{secondPlace.score}</p>
+        </div>
+        <div className={styles.thirdPlace}>
+          <p>{thirdPlace.name}</p>
+          <p>{thirdPlace.score}</p>
+        </div>
       </div>
     </div>
   );

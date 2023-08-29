@@ -1,30 +1,42 @@
-.finalLeaderBoard{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 2em;
+.finalLeaderBoard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
 }
 
-.leaderBoard{
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
-	color: black;
-  }
-  
-  .winner {
-	width: 120px;
-	height: 60vh;
-	background-color: white;
-  }
-  .secondPlace {
-	width: 120px;
-	height: 50vh;
-	background-color: blue;
-  }
-  .thirdPlace {
-	width: 120px;
-	height: 40vh;
-	background-color: green;
-  }
+.leaderBoard {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: black;
+}
+
+.winner {
+  width: 120px;
+  height: 60vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.secondPlace {
+  width: 120px;
+  height: 50vh;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.thirdPlace {
+  width: 120px;
+  height: 40vh;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
