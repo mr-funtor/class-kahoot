@@ -8,6 +8,7 @@ import NicknamePage from "./pages/Nickname/NicknamePage";
 import PlayerWaiting from "./pages/PlayerWaiting";
 import Home from "./pages/homePage/Home";
 import QuestionPage from "./pages/QuestionPage/QuestionPage";
+import HostWaiting from "./pages/hostSide/HostWaiting";
 import ResponseTrackerPage from "./pages/hostSide/responseTracker/ResponseTrackerPage";
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-evenly",
-            padding: "20px",
+            fontSize: "1.5rem",
+            padding: "10px",
             boxShadow: "2px 2px 12px 12px rgba(0,0,0,0.2)",
           }}
         >
@@ -29,7 +31,7 @@ function App() {
           <Link to="nickname">Nickname page</Link>
           <Link to="playerWaiting">Player waiting page</Link>
           <Link to="questions">Question Page</Link>
-          <Link to="responses">Response Tracker</Link>
+          <Link to="hostwaiting">Host Waiting</Link>
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -37,6 +39,7 @@ function App() {
           <Route path="/nickName" element={<NicknamePage />} />
           <Route path="/playerWaiting" element={<PlayerWaiting />} />
           <Route path="/questions" element={<QuestionPage />} />
+          <Route path="/hostwaiting" element={<HostWaiting />} />
           <Route path="/responses" element={<ResponseTrackerPage />} />
         </Routes>
       </Router>
