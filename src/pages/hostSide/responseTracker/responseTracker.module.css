@@ -152,7 +152,7 @@
 .barChart {
   display: flex;
   align-items: flex-end;
-  width: 40vmax;
+  width: 30vmax;
   height: 12rem;
   margin: 40px auto;
   gap: 3vmax;
@@ -173,7 +173,7 @@
 .labels {
   color: white;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.2vmax;
   position: absolute;
   width: 100%;
   bottom: 4px;
@@ -185,23 +185,28 @@
 
 .questions {
   display: flex;
-  place-content: center;
-  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 .questionBox {
   background-color: white;
   color: black;
   text-align: center;
-  width: 55%;
+  width: 50vmax;
   padding: 0.8rem;
   margin-top: 0.5rem;
   border-radius: 0.5rem;
+  font-size: 1.5vmax;
+  margin: 0;
 }
 
 .next {
-  width: 6rem;
-  font-size: 1.2rem;
+  width: 8vmax;
+  margin: 0;
+  height: 3vmax;
+  font-size: 1.4vmax;
   font-family: inherit;
   background-color: hsla(255, 64%, 66%, 1);
 }
