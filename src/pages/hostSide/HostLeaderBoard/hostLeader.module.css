@@ -1,0 +1,104 @@
+.playerContainer {
+  display: flex;
+  height: 100vh;
+  margin-top: 6rem;
+  flex-direction: column;
+  place-items: center;
+}
+
+.playerDetails {
+  width: 50%;
+  display: flex;
+  margin-top: -0.9rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0.5rem;
+  color: #ffffffa9;
+}
+
+.playerDetails:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.playerNameContain {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0;
+  align-items: center;
+}
+
+.avatar {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.paragraph {
+  font-size: 2vmax;
+}
+
+.btnContainer {
+  display: flex;
+  margin: auto;
+  width: 50%;
+  margin-top: -5px;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.playerBtn {
+  padding: 0.7rem 1.2rem;
+  background-color: rgba(5, 213, 113, 1);
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .playerBtn {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .playerBtn {
+    padding: 0.4rem 0.9rem;
+    font-size: 1rem;
+  }
+
+  .avatar {
+    height: 20px;
+    width: 20px;
+  }
+
+  .playerDetails {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .playerBtn {
+    padding: 0.4rem 0.9rem;
+    font-size: 1rem;
+  }
+
+  .avatar {
+    height: 15px;
+    width: 15px;
+  }
+
+  .playerDetails {
+    width: 70%; 
+  }
+
+  .btnContainer {
+    width: 70%;
+  }
+  
+}

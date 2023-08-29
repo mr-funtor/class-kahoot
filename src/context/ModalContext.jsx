@@ -84,7 +84,7 @@ const ModalContextProvider = ({ children }) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
 
-  // sets default image to random image every time the page loads
+  // sets default image to a random image every time the page loads
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * avatars.length);
     setDefaultImage(avatars[randomIndex].imageSource);
