@@ -21,7 +21,7 @@
   align-items: center;
   z-index: 1;
   position: absolute;
-  bottom: 3rem;
+  bottom: -5rem;
   left: 31rem;
 }
 
@@ -31,12 +31,13 @@
   justify-content: center;
   gap: 3rem;
 }
+
 .finalLeaderBoard {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2em;
+  gap: 1em;
 }
 
 .leaderBoard {
@@ -46,23 +47,42 @@
   color: black;
 }
 
-.winner {
-  width: 165px;
-  height: 72vh;
-  background: #4826a6;
+.imageDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.images {
+  width: 50%;
+  border: 3px solid purple;
+  border-radius: 100%;
+}
+
+.bars {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.firstPlace {
+  height: 70vh;
+  background-color: white;
+  position: relative;
 }
 .secondPlace {
-  width: 165px;
-  height: 50vh;
+  height: 60vh;
   background-color: blue;
+  position: relative;
 }
 .thirdPlace {
-  width: 165px;
-  height: 40vh;
+  height: 50vh;
   background-color: green;
   position: relative;
 }
-
 .position {
   font-size: 16px;
 }
