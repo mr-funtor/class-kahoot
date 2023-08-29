@@ -9,16 +9,16 @@ import PlayerWaiting from "./pages/PlayerWaiting";
 import Home from "./pages/homePage/Home";
 import QuestionPage from "./pages/QuestionPage/QuestionPage";
 import HostWaiting from "./pages/hostSide/HostWaiting";
+import ResponseTrackerPage from "./pages/hostSide/responseTracker/ResponseTrackerPage";
 import HostLeaderBoard from "./pages/hostSide/HostLeaderBoard/HostLeaderBoard";
 import WaitingRoom from "./pages/waitingRoom/WaitingRoom";
-
 
 function App() {
   return (
     <div className="App">
       <Router>
         <nav
-          style={ {
+          style={{
             width: "100%",
             display: "flex",
             alignItems: "center",
@@ -26,14 +26,15 @@ function App() {
             fontSize: "1.5rem",
             padding: "10px",
             boxShadow: "2px 2px 12px 12px rgba(0,0,0,0.2)",
-          } }
+          }}
         >
           <Link to="/">home page</Link>
           <Link to="gamePin">Game pin page</Link>
           <Link to="nickname">Nickname page</Link>
           <Link to="playerWaiting">Player waiting page</Link>
           <Link to="questions">Question Page</Link>
-          <Link to='hostwaiting'>Host Waiting</Link>
+          <Link to="hostwaiting">Host Waiting</Link>
+          <Link to="responses">Responses</Link>
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -41,9 +42,15 @@ function App() {
           <Route path="/nickName" element={<NicknamePage />} />
           <Route path="/playerWaiting" element={<PlayerWaiting />} />
           <Route path="/questions" element={<QuestionPage />} />
+<<<<<<< HEAD
           <Route path='/hostwaiting' element={ <HostWaiting /> } />
           <Route path="/leaderBoard" element={<HostLeaderBoard/>}/>
           <Route path="/waitingRoom" element={<WaitingRoom/>}/>
+=======
+          <Route path="/responses" element={<ResponseTrackerPage />} />
+          <Route path="/hostwaiting" element={<HostWaiting />} />
+          <Route path="/leaderBoard" element={<HostLeaderBoard />} />
+>>>>>>> 1a8625f4b0d72a86c818bc7fc452ca709d389ce9
           {/* Note: the route is just to see how to navigate to the leaderBoard page, is not necessarily where is meant to be */}
         </Routes>
       </Router>

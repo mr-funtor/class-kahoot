@@ -1,0 +1,228 @@
+.pageBody {
+  height: 100vh;
+  padding: 2rem;
+}
+
+.optionDiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 70vw;
+  text-align: left;
+  column-gap: 2rem;
+  row-gap: 0.5rem;
+  margin: auto;
+  margin-top: -0.5rem;
+}
+.firstButton {
+  opacity: 0.4;
+}
+.secondButton {
+  opacity: 0.4;
+}
+.thirdButton {
+  opacity: 0.4;
+}
+.fourthButton {
+  opacity: 1;
+}
+
+.default {
+  outline: none;
+  width: 100%;
+  height: 90px;
+  text-align: left;
+  padding: 1rem;
+  color: white;
+  border-color: transparent;
+  border-radius: 7px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.5vmax;
+}
+
+.default:hover {
+  font-size: 1.4rem;
+  transition: all 0.2s ease-in-out;
+}
+
+@keyframes glowing-purple {
+  0%,
+  100% {
+    background-color: hsla(255, 64%, 66%, 1);
+    box-shadow: 0 0 5px hsla(255, 64%, 66%, 1);
+  }
+  50% {
+    background-color: hsla(255, 64%, 70%, 1);
+    box-shadow: 0 0 10px hsla(255, 64%, 70%, 1);
+  }
+}
+
+.purple {
+  background-color: hsla(255, 64%, 66%, 1);
+}
+.purple:hover {
+  animation: glowing-purple 1300ms infinite;
+}
+
+@keyframes glowing-blue {
+  0%,
+  100% {
+    background-color: hsla(191, 95%, 46%, 1);
+    box-shadow: 0 0 5px hsla(191, 95%, 46%, 1);
+  }
+  50% {
+    background-color: hsla(191, 95%, 50%, 1);
+    box-shadow: 0 0 10px hsla(191, 95%, 50%, 1);
+  }
+}
+
+.blue {
+  background-color: hsla(191, 95%, 46%, 1);
+}
+.blue:hover {
+  animation: glowing-blue 1300ms infinite;
+}
+
+@keyframes glowing-yellow {
+  0%,
+  100% {
+    background-color: hsla(47, 79%, 52%, 1);
+    box-shadow: 0 0 5px hsla(47, 79%, 52%, 1);
+  }
+  50% {
+    background-color: hsla(47, 79%, 56%, 1);
+    box-shadow: 0 0 10px hsla(47, 79%, 56%, 1);
+  }
+}
+
+.yellow {
+  background-color: hsla(47, 79%, 52%, 1);
+}
+.yellow:hover {
+  animation: glowing-yellow 1300ms infinite;
+}
+
+@keyframes glowing-pink {
+  0%,
+  100% {
+    background-color: hsla(302, 94%, 51%, 1);
+    box-shadow: 0 0 5px hsla(302, 94%, 51%, 1);
+  }
+  50% {
+    background-color: hsla(302, 94%, 55%, 1);
+    box-shadow: 0 0 10px hsla(302, 94%, 55%, 1);
+  }
+}
+
+.pink {
+  background-color: hsla(302, 94%, 51%, 1);
+}
+.pink:hover {
+  animation: glowing-pink 1300ms infinite;
+}
+
+@media only screen and (max-width: 780px) {
+  .default {
+    text-align: left;
+    height: 8vmax;
+    padding: 0.5rem;
+    margin-top: 10px;
+    font-size: 2vmax;
+  }
+
+  .default:hover {
+    font-size: 1.15rem;
+  }
+
+  .optionDiv {
+    margin-top: -1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .optionDiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: -1rem;
+  }
+
+  .default {
+    text-align: center;
+    height: 8vmax;
+    padding: 0;
+    margin-top: 10px;
+    font-size: 2vmax;
+  }
+
+  .default:hover {
+    font-size: 0.85rem;
+  }
+}
+
+.barChart {
+  display: flex;
+  align-items: flex-end;
+  width: 30vmax;
+  height: 12rem;
+  margin: 40px auto;
+  gap: 3vmax;
+}
+
+.bar {
+  width: 30rem;
+  transition: height 0.3s ease-in-out;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-end;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.labels {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2vmax;
+  position: absolute;
+  width: 100%;
+  bottom: 4px;
+}
+
+.checkmark {
+  margin-left: 5px;
+}
+
+.questions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.questionBox {
+  background-color: white;
+  color: black;
+  text-align: center;
+  width: 50vmax;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.5vmax;
+  margin: 0;
+}
+
+.next {
+  width: 8vmax;
+  margin: 0;
+  height: 3vmax;
+  font-size: 1.4vmax;
+  font-family: inherit;
+  background-color: hsla(255, 64%, 66%, 1);
+}
+
+.next:hover {
+  animation: glowing-purple 1300ms infinite;
+}
