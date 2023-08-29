@@ -1,43 +1,49 @@
-import React from 'react';
-
-
+import React from "react";
+import {
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+} from "../../assets/index";
+import styles from "./finalLeaderboard.module.css";
 
 const FinalLeaderBoard = () => {
-  const users = [
-    { name: 'Precious', score: 150 },
-    { name: 'Toyin', score: 250 },
-    { name: 'Waliyah', score: 200 },
-    { name: 'Taiwo', score: 320 },
-    { name: 'Brown', score: 100 },
-    { name: 'Theo', score: 110 },
-    { name: 'Lanre', score: 180 },
-    { name: 'Damola', score: 190 },
-    { name: 'Wale', score: 220 },
+  const players = [
+    { name: "Precious", score: 150, image: img1 },
+    { name: "Toyin", score: 250, image: img2 },
+    { name: "Waliyah", score: 100, image: img3 },
+    { name: "Taiwo", score: 320, image: img4 },
+    { name: "Brown", score: 200, image: img5 },
+    { name: "Theo", score: 110, image: img6 },
+    { name: "Lanre", score: 180, image: img7 },
+    { name: "Damola", score: 190, image: img8 },
+    { name: "Wale", score: 220, image: img9 },
   ];
-  // Sort the users based on scores in descending order
-  const sortedUsers = [...users].sort((a, b) => b.score - a.score);
+
+  const sortedPlayers = [...players].sort((a, b) => b.score - a.score);
+  // console.log(sortedPlayers[0]);
+  const firstPlace = sortedPlayers[0].name;
+  const secondPlace = sortedPlayers[1].name;
+  const thirdPlace = sortedPlayers[2].name;
+  // console.log(firstPlace);
 
   return (
-    <div className="FinalLeaderBoard">
-      <h2>FinalLeaderBoard</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Rank</th>
-            <th>Name</th>
-            <th>Score</th>
-          </tr>
-        </thead>
-        <tbody>
-          {sortedUsers.map((user, index) => (
-            <tr key={user.name}>
-              <td>{index + 1}</td>
-              <td>{user.name}</td>
-              <td>{user.score}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className={styles.finalLeaderBoard}>
+      <img
+        style={{ width: "110px" }}
+        src={sortedPlayers[0].image}
+        alt={sortedPlayers[0].name}
+      />
+      <div className={styles.leaderBoard}>
+        <div className={styles.secondPlace}>{firstPlace}</div>
+        <div className={styles.winner}>{secondPlace}</div>
+        <div className={styles.thirdPlace}>{thirdPlace}</div>
+      </div>
     </div>
   );
 };
