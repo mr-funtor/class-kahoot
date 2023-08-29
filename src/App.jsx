@@ -42,15 +42,9 @@ function App() {
           <Route path="/nickName" element={<NicknamePage />} />
           <Route path="/playerWaiting" element={<PlayerWaiting />} />
           <Route path="/questions" element={<QuestionPage />} />
-<<<<<<< HEAD
           <Route path='/hostwaiting' element={ <HostWaiting /> } />
           <Route path="/leaderBoard" element={<HostLeaderBoard/>}/>
           <Route path="/waitingRoom" element={<WaitingRoom/>}/>
-=======
-          <Route path="/responses" element={<ResponseTrackerPage />} />
-          <Route path="/hostwaiting" element={<HostWaiting />} />
-          <Route path="/leaderBoard" element={<HostLeaderBoard />} />
->>>>>>> 1a8625f4b0d72a86c818bc7fc452ca709d389ce9
           {/* Note: the route is just to see how to navigate to the leaderBoard page, is not necessarily where is meant to be */}
         </Routes>
       </Router>
