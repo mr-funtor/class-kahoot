@@ -51,15 +51,15 @@ const FinalLeaderBoard = () => {
         <p>winner!</p>
       </div>
       <div className={styles.leaderBoard}>
-        <div className={styles.secondPlace}>
-          <p>{firstPlace.name}</p>
-          <p>{firstPlace.score}</p>
-        </div>
-        <div className={styles.winner}>
+        <div className={`${styles.bars} ${styles.secondPlace}`}>
           <p>{secondPlace.name}</p>
           <p>{secondPlace.score}</p>
         </div>
-        <div className={styles.thirdPlace}>
+        <div className={`${styles.bars} ${styles.winner}`}>
+          <p>{firstPlace.name}</p>
+          <p>{firstPlace.score}</p>
+        </div>
+        <div className={`${styles.bars} ${styles.thirdPlace}`}>
           <p>{thirdPlace.name}</p>
           <p>{thirdPlace.score}</p>
         </div>

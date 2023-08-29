@@ -13,30 +13,23 @@
   color: black;
 }
 
+.bars {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .winner {
-  width: 120px;
   height: 60vh;
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
 }
 .secondPlace {
-  width: 120px;
   height: 50vh;
   background-color: blue;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
 }
 .thirdPlace {
-  width: 120px;
   height: 40vh;
   background-color: green;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
 }
