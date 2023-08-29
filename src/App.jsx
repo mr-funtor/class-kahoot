@@ -11,6 +11,7 @@ import QuestionPage from "./pages/QuestionPage/QuestionPage";
 import HostWaiting from "./pages/hostSide/HostWaiting";
 import ResponseTrackerPage from "./pages/hostSide/responseTracker/ResponseTrackerPage";
 import HostLeaderBoard from "./pages/hostSide/HostLeaderBoard/HostLeaderBoard";
+import WaitingRoom from "./pages/waitingRoom/WaitingRoom";
 
 function App() {
   return (
@@ -41,9 +42,9 @@ function App() {
           <Route path="/nickName" element={<NicknamePage />} />
           <Route path="/playerWaiting" element={<PlayerWaiting />} />
           <Route path="/questions" element={<QuestionPage />} />
-          <Route path="/responses" element={<ResponseTrackerPage />} />
-          <Route path="/hostwaiting" element={<HostWaiting />} />
-          <Route path="/leaderBoard" element={<HostLeaderBoard />} />
+          <Route path='/hostwaiting' element={ <HostWaiting /> } />
+          <Route path="/leaderBoard" element={<HostLeaderBoard/>}/>
+          <Route path="/waitingRoom" element={<WaitingRoom/>}/>
           {/* Note: the route is just to see how to navigate to the leaderBoard page, is not necessarily where is meant to be */}
         </Routes>
       </Router>
