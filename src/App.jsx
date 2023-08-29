@@ -8,7 +8,9 @@ import NicknamePage from "./pages/Nickname/NicknamePage";
 import PlayerWaiting from "./pages/PlayerWaiting";
 import Home from "./pages/homePage/Home";
 import QuestionPage from "./pages/QuestionPage/QuestionPage";
+import HostWaiting from "./pages/hostSide/HostWaiting";
 import HostLeaderBoard from "./pages/hostSide/HostLeaderBoard/HostLeaderBoard";
+
 
 function App() {
   return (
