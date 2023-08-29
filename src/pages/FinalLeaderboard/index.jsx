@@ -46,57 +46,38 @@ const FinalLeaderboard = () => {
 
   return (
     <div className={styles.finalLeaderBoard}>
-      <div positionContainer>
-        <div className={styles.otherPositions}>
-          <ol start="4">
-            <div>
-              <li>Username (score)</li>
-              <li>Username (score)</li>
-              <li>Username (score)</li>
-            </div>
-            <div>
-              <li>Username (score)</li>
-              <li>Username (score)</li>
-              <li>Username (score)</li>
-            </div>
-          </ol>
-        </div>
+      <div className={styles.imageDiv}>
+        <LoadingSpinner size="150px">
+          <img
+            style={{
+              width: "110px",
+              border: "5px solid white",
+              borderRadius: "100%",
+            }}
+            src={sortedPlayers[0].image}
+            alt={sortedPlayers[0].name}
+          />
+        </LoadingSpinner>
+        <p>winner!</p>
       </div>
-
-      <div className={styles.finalLeaderBoard}>
-        <div className={styles.imageDiv}>
-          <LoadingSpinner size="120px">
-            <img
-              style={{
-                width: "80px",
-                border: "5px solid white",
-                borderRadius: "100%",
-              }}
-              src={sortedPlayers[0].image}
-              alt={sortedPlayers[0].name}
-            />
-          </LoadingSpinner>
-          <p>winner!</p>
+      <div className={styles.leaderBoard}>
+        <div className={`${styles.bars} ${styles.secondPlace}`}>
+          2
+          <img className={styles.images} src={secondPlace.img} alt="" />
+          <p>{secondPlace.name}</p>
+          <p>{secondPlace.score}</p>
         </div>
-        <div className={styles.leaderBoard}>
-          <div className={`${styles.bars} ${styles.secondPlace}`}>
-            <p className={styles.score}>2</p>
-            <img className={styles.images} src={secondPlace.img} alt="" />
-            <p className={styles.position}>{secondPlace.name}</p>
-            <p className={styles.position}>{secondPlace.score} </p>
-          </div>
-          <div className={`${styles.bars} ${styles.firstPlace}`}>
-            <p className={styles.score}>1</p>
-            <img className={styles.images} src={firstPlace.img} alt="" />
-            <p className={styles.position}>{firstPlace.name}</p>
-            <p className={styles.position}>{firstPlace.score}</p>
-          </div>
-          <div className={`${styles.bars} ${styles.thirdPlace}`}>
-            <p className={styles.score}>3</p>
-            <img className={styles.images} src={thirdPlace.img} alt="" />
-            <p className={styles.position}>{thirdPlace.name}</p>
-            <p className={styles.position}>{thirdPlace.score}</p>
-          </div>
+        <div className={`${styles.bars} ${styles.firstPlace}`}>
+          1
+          <img className={styles.images} src={firstPlace.img} alt="" />
+          <p>{firstPlace.name}</p>
+          <p>{firstPlace.score}</p>
+        </div>
+        <div className={`${styles.bars} ${styles.thirdPlace}`}>
+          3
+          <img className={styles.images} src={thirdPlace.img} alt="" />
+          <p>{thirdPlace.name}</p>
+          <p>{thirdPlace.score}</p>
         </div>
       </div>
     </div>
