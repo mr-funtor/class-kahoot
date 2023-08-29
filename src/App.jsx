@@ -24,7 +24,7 @@ function App() {
             justifyContent: "space-evenly",
             fontSize: "1.5rem",
             padding: "10px",
-            boxShadow: "2px 2px 12px 12px rgba(0,0,0,0.2)",
+            boxShadow: "2px 2px 12px 12px rgba(0,0,0,0.2)"
           }}
         >
           <Link to="/">home page</Link>
