@@ -24,7 +24,9 @@ const resultPage = () => {
           )}
         </div>
       </div>
-      <p>{answer ? "Correct. You're a star!" : "Incorrect. Don't give up!"}</p>
+      <p className={style.text}>
+        {answer ? "Correct. You're a star!" : "Incorrect. Don't give up!"}
+      </p>
     </div>
   );
 };
