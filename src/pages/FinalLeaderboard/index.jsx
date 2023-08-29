@@ -11,7 +11,7 @@ import {
   img9,
 } from "../../assets/index";
 import styles from "./finalLeaderboard.module.css";
-import LoadingSpinner from '../../components/LoadingSpinner'
+import LoadingSpinner from "../../components/LoadingSpinner";
 
 const FinalLeaderBoard = () => {
   const players = [
@@ -63,31 +63,19 @@ const FinalLeaderBoard = () => {
       <div className={styles.leaderBoard}>
         <div className={`${styles.bars} ${styles.secondPlace}`}>
           2
-          <img
-            className={styles.images}
-            src={secondPlace.img}
-            alt=""
-          />
+          <img className={styles.images} src={secondPlace.img} alt="" />
           <p>{secondPlace.name}</p>
           <p>{secondPlace.score}</p>
         </div>
         <div className={`${styles.bars} ${styles.firstPlace}`}>
           1
-          <img
-            className={styles.images}
-            src={firstPlace.img}
-            alt=""
-          />
+          <img className={styles.images} src={firstPlace.img} alt="" />
           <p>{firstPlace.name}</p>
           <p>{firstPlace.score}</p>
         </div>
         <div className={`${styles.bars} ${styles.thirdPlace}`}>
           3
-          <img
-            className={styles.images}
-            src={thirdPlace.img}
-            alt=""
-          />
+          <img className={styles.images} src={thirdPlace.img} alt="" />
           <p>{thirdPlace.name}</p>
           <p>{thirdPlace.score}</p>
         </div>
