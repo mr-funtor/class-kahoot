@@ -1,0 +1,43 @@
+/* resultPage.module.css */
+.pgBody {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 10rem;
+}
+.outerCircleCorrect {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: white;
+  outline: 0.4rem solid rgb(5, 213, 113);
+}
+.innerCircleCorrect {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: rgb(5, 213, 113);
+  transform: translate(20%, 20%);
+}
+.innerCircleWrong {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: red;
+  transform: translate(20%, 20%);
+}
+.outerCircleWrong {
+  outline: 0.4rem solid red;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: white;
+}
+
+img {
+  width: 65%;
+  transform: translate(28%, 28%);
+}
