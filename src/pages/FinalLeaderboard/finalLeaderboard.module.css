@@ -1,0 +1,27 @@
+.positionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  z-index: 1;
+  height: 100vh;
+  /* background-color: white; */
+}
+
+.otherPositions {
+  width: 30rem;
+  height: 13rem;
+  background-color: #b5a3ea;
+  color: black;
+  font-size: 1.3rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.otherPositions ol {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}

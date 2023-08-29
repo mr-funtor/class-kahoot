@@ -35,7 +35,7 @@ function App() {
           <Link to="questions">Question Page</Link>
           <Link to="hostwaiting">Host Waiting</Link>
           <Link to="responses">Responses</Link>
-          <Link to="finalLeaderboard"></Link>
+          <Link to="finalLeaderboard">FinalLeaderboard Page</Link>
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
