@@ -12,12 +12,24 @@ const ResponseTrackerPage = () => {
     { label: "D -", point: 9, color: "hsla(302, 94%, 51%, 1)" },
   ];
 
-  function optionMap(item) {
+  function optionMap(item, index) {
+    let buttonStyle = "";
+
+    if (index === 0) {
+      buttonStyle = style.firstButton;
+    } else if (index === 1) {
+      buttonStyle = style.secondButton;
+    } else if (index === 2) {
+      buttonStyle = style.thirdButton;
+    } else if (index === 3) {
+      buttonStyle = style.fourthButton;
+    }
+
     return (
       <CustomButton
         key={item.id}
         buttonText={item.value}
-        containerStyle={`${style.default} ${item.backgroundColor}`}
+        containerStyle={`${style.default} ${item.backgroundColor} ${buttonStyle}`}
       />
     );
   }

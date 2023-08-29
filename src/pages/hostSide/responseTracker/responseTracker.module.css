@@ -13,6 +13,18 @@
   margin: auto;
   margin-top: -0.5rem;
 }
+.firstButton {
+  opacity: 0.4;
+}
+.secondButton {
+  opacity: 0.4;
+}
+.thirdButton {
+  opacity: 0.4;
+}
+.fourthButton {
+  opacity: 1;
+}
 
 .default {
   outline: none;
