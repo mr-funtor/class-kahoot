@@ -66,7 +66,7 @@ const FinalLeaderBoard = () => {
           <img
             style={{
               width: "80px",
-              border: "5px solid black",
+              border: "5px solid purple",
               borderRadius: "100%",
             }}
             src={secondPlace.img}
@@ -80,7 +80,7 @@ const FinalLeaderBoard = () => {
           <img
             style={{
               width: "80px",
-              border: "5px solid black",
+              border: "5px solid purple",
               borderRadius: "100%",
             }}
             src={firstPlace.img}
@@ -94,7 +94,7 @@ const FinalLeaderBoard = () => {
           <img
             style={{
               width: "80px",
-              border: "5px solid black",
+              border: "5px solid purple",
               borderRadius: "100%",
             }}
             src={thirdPlace.img}
