@@ -64,11 +64,7 @@ const FinalLeaderBoard = () => {
         <div className={`${styles.bars} ${styles.secondPlace}`}>
           2
           <img
-            style={{
-              width: "80px",
-              border: "5px solid purple",
-              borderRadius: "100%",
-            }}
+            className={styles.images}
             src={secondPlace.img}
             alt=""
           />
@@ -78,11 +74,7 @@ const FinalLeaderBoard = () => {
         <div className={`${styles.bars} ${styles.firstPlace}`}>
           1
           <img
-            style={{
-              width: "80px",
-              border: "5px solid purple",
-              borderRadius: "100%",
-            }}
+            className={styles.images}
             src={firstPlace.img}
             alt=""
           />
@@ -92,11 +84,7 @@ const FinalLeaderBoard = () => {
         <div className={`${styles.bars} ${styles.thirdPlace}`}>
           3
           <img
-            style={{
-              width: "80px",
-              border: "5px solid purple",
-              borderRadius: "100%",
-            }}
+            className={styles.images}
             src={thirdPlace.img}
             alt=""
           />
