@@ -23,6 +23,12 @@ const ResponseTrackerPage = () => {
   }
   return (
     <div className={style.pageBody}>
+      <div className={style.questions}>
+        <p className={style.questionBox}>
+          What is the full name of your instructor?
+        </p>
+        <CustomButton buttonText={"Next"} containerStyle={style.next} />
+      </div>
       <BarChart data={data} />
       <div className={style.optionDiv}>{options.map(optionMap)}</div>
     </div>

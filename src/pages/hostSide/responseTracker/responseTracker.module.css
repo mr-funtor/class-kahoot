@@ -1,5 +1,6 @@
 .pageBody {
   height: 100vh;
+  padding: 2rem;
 }
 
 .optionDiv {
@@ -11,7 +12,6 @@
   row-gap: 0.5rem;
   margin: auto;
   margin-top: -0.5rem;
-  /* border: 10px solid red; */
 }
 
 .default {
@@ -153,7 +153,7 @@
   display: flex;
   align-items: flex-end;
   width: 40vmax;
-  height: 30rem;
+  height: 12rem;
   margin: 40px auto;
   gap: 3vmax;
 }
@@ -181,4 +181,31 @@
 
 .checkmark {
   margin-left: 5px;
+}
+
+.questions {
+  display: flex;
+  place-content: center;
+  gap: 2rem;
+}
+
+.questionBox {
+  background-color: white;
+  color: black;
+  text-align: center;
+  width: 55%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.next {
+  width: 6rem;
+  font-size: 1.2rem;
+  font-family: inherit;
+  background-color: hsla(255, 64%, 66%, 1);
+}
+
+.next:hover {
+  animation: glowing-purple 1300ms infinite;
 }

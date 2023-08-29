@@ -10,7 +10,7 @@ const BarChart = ({ data }) => {
           key={index}
           className={style.bar}
           style={{
-            height: `${(item.point / maxDataValue) * 50}%`,
+            height: `${(item.point / maxDataValue) * 100}%`,
             backgroundColor: item.color,
           }}
         >
