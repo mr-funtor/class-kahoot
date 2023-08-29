@@ -30,7 +30,6 @@ const FinalLeaderBoard = () => {
   const firstPlace = sortedPlayers[0].name;
   const secondPlace = sortedPlayers[1].name;
   const thirdPlace = sortedPlayers[2].name;
-  // console.log(firstPlace);
 
   return (
     <div className={styles.finalLeaderBoard}>
