@@ -28,14 +28,15 @@ function App() {
             boxShadow: "2px 2px 12px 12px rgba(0,0,0,0.2)",
           }}
         >
-          <Link to="/">home page</Link>
-          <Link to="gamePin">Game pin page</Link>
-          <Link to="nickname">Nickname page</Link>
-          <Link to="playerWaiting">Player waiting page</Link>
-          <Link to="questions">Question Page</Link>
-          <Link to="hostwaiting">Host Waiting</Link>
+          <Link to="/">home</Link>
+          <Link to="gamePin">GamePin</Link>
+          <Link to="nickname">Nickname</Link>
+          <Link to="playerWaiting">PlayerWaiting</Link>
+          <Link to="questions">Question</Link>
+          <Link to="hostwaiting">HostWaiting</Link>
           <Link to="responses">Responses</Link>
-          <Link to="finalLeaderboard"></Link>
+          <Link to="leaderBoard">LeaderBoard</Link>
+          <Link to="finalLeaderboard">FinalLeaderBoard</Link>
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
