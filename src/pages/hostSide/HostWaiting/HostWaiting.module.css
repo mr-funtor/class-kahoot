@@ -43,6 +43,7 @@
 
 .startBtn {
   /*  */
+  font-family: inherit;
   box-sizing: border-box;
   all: none;
   font-size: 1rem;
@@ -52,15 +53,28 @@
   font-weight: 700;
   height: unset;
   padding: 0.5em 1em 0.5em 0.5em;
-  background: #9747ff;
+  background: hsl(266, 100%, 64%);
+}
+
+@keyframes glowing-purple {
+  0%,
+  100% {
+    background-color: hsl(266, 100%, 64%, 1);
+    box-shadow: 0 0 5px hsla(266, 100%, 64%, 1);
+  }
+  50% {
+    background-color: hsla(266, 100%, 68%, 1);
+    box-shadow: 0 0 10px hsla(266, 100%, 68%, 1);
+  }
 }
 
 .startBtn:hover {
-  filter: brightness(110%);
+  animation: glowing-purple 1300ms infinite;
 }
 
 .startBtn:disabled {
   background-color: #525252;
+  animation: none;
 }
 
 .playIcon {
@@ -91,7 +105,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
 
 .userAvi {
