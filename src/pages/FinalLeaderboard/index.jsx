@@ -27,6 +27,8 @@ const FinalLeaderBoard = () => {
   ];
 
   const sortedPlayers = [...players].sort((a, b) => b.score - a.score);
+  const ranId = Math.random
+
 
   const firstPlace = {
     img: sortedPlayers[0].image,
@@ -45,39 +47,58 @@ const FinalLeaderBoard = () => {
   };
 
   return (
-    <div className={styles.finalLeaderBoard}>
-      <div className={styles.imageDiv}>
+    <div className={ styles.finalLeaderBoard }>
+      <div className={ styles.imageDiv }>
         <LoadingSpinner size="150px">
           <img
-            style={{
+            style={ {
               width: "110px",
               border: "5px solid white",
               borderRadius: "100%",
-            }}
-            src={sortedPlayers[0].image}
-            alt={sortedPlayers[0].name}
+            } }
+            src={ sortedPlayers[0].image }
+            alt={ sortedPlayers[0].name }
           />
         </LoadingSpinner>
         <p>winner!</p>
       </div>
-      <div className={styles.leaderBoard}>
-        <div className={`${styles.bars} ${styles.secondPlace}`}>
+      <div className={ styles.leaderBoard }>
+        <div className={ `${styles.bars} ${styles.secondPlace}` }>
           2
-          <img className={styles.images} src={secondPlace.img} alt="" />
-          <p>{secondPlace.name}</p>
-          <p>{secondPlace.score}</p>
+          <img className={ styles.images } src={ secondPlace.img } alt="" />
+          <p>{ secondPlace.name }</p>
+          <p>{ secondPlace.score }</p>
         </div>
-        <div className={`${styles.bars} ${styles.firstPlace}`}>
+        <div className={ `${styles.bars} ${styles.firstPlace}` }>
           1
-          <img className={styles.images} src={firstPlace.img} alt="" />
-          <p>{firstPlace.name}</p>
-          <p>{firstPlace.score}</p>
+          <img className={ styles.images } src={ firstPlace.img } alt="" />
+          <p>{ firstPlace.name }</p>
+          <p>{ firstPlace.score }</p>
         </div>
-        <div className={`${styles.bars} ${styles.thirdPlace}`}>
+        <div className={ `${styles.bars} ${styles.thirdPlace}` }>
           3
-          <img className={styles.images} src={thirdPlace.img} alt="" />
-          <p>{thirdPlace.name}</p>
-          <p>{thirdPlace.score}</p>
+          <img className={ styles.images } src={ thirdPlace.img } alt="" />
+          <p>{ thirdPlace.name }</p>
+          <p>{ thirdPlace.score }</p>
+        </div>
+
+        <div className={ styles.restPlayers }>
+          <ol start={ 4 }>
+            <div>
+              {
+                sortedPlayers.slice(3, 6).map(player => (<li key={ ranId() }>
+                  { `${player.name} (${player.score})` }
+                </li>))
+              }
+            </div>
+            <div>
+              {
+                sortedPlayers.slice(6, sortedPlayers.length).map(player => (<li key={ ranId() }>
+                  { `${player.name} (${player.score})` }
+                </li>))
+              }
+            </div>
+          </ol>
         </div>
       </div>
     </div>

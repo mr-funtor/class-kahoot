@@ -20,10 +20,10 @@
   justify-content: flex-start;
 }
 
-.images{
-	width: 50%;
-	border: 3px solid purple;
-	border-radius: 100%;
+.images {
+  width: 50%;
+  border: 3px solid purple;
+  border-radius: 100%;
 }
 
 .bars {
@@ -35,14 +35,30 @@
 }
 
 .firstPlace {
-  height: 60vh;
+  height: 70vh;
   background-color: white;
 }
 .secondPlace {
-  height: 50vh;
+  height: 60vh;
   background-color: blue;
 }
 .thirdPlace {
-  height: 40vh;
+  height: 50vh;
   background-color: green;
+}
+
+.restPlayers {
+  background: #ffffff6f;
+  min-width: 250px;
+  position: absolute;
+  top: 95%;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.restPlayers ol {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
 }
