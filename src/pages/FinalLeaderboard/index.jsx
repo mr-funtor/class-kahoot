@@ -44,10 +44,25 @@ const FinalLeaderboard = () => {
     score: sortedPlayers[2].score,
   };
 
+  // console.log(sortedPlayers.slice(3));
+  const otherPlayers = sortedPlayers.slice(3).map((player, index) => (
+    <div key={index} className={styles.otherPositions}>
+      <ol start={4}>
+        <li style={{display: 'flex'}}>
+          <p>{index + 4}.</p>
+          <div className={styles.flex}>
+            <p>{player.name}</p>
+            <p>({player.score})</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  ));
+
   return (
     <div className={styles.finalLeaderBoard}>
-      <div positionContainer>
-        <div className={styles.otherPositions}>
+      <div className={styles.positionContainer}>
+        {/* <div className={styles.otherPositions}>
           <ol start="4">
             <div>
               <li>
@@ -72,18 +87,15 @@ const FinalLeaderboard = () => {
               </li>
             </div>
           </ol>
-        </div>
+        </div> */}
+        {otherPlayers}
       </div>
 
       <div className={styles.finalLeaderBoard}>
         <div className={styles.imageDiv}>
           <LoadingSpinner size="120px">
             <img
-              style={{
-                width: "80px",
-                border: "5px solid white",
-                borderRadius: "100%",
-              }}
+              className={styles.winnerImage}
               src={sortedPlayers[0].image}
               alt={sortedPlayers[0].name}
             />
@@ -92,7 +104,6 @@ const FinalLeaderboard = () => {
         </div>
 
         <div className={styles.leaderBoard}>
-
           <div className={styles.scoreBoard}>
             <p className={styles.score}>2</p>
             <div className={`${styles.bars} ${styles.secondPlace}`}>
@@ -119,7 +130,6 @@ const FinalLeaderboard = () => {
               <p className={styles.position}>{thirdPlace.score}</p>
             </div>
           </div>
-          
         </div>
       </div>
     </div>
