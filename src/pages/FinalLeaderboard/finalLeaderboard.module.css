@@ -8,15 +8,14 @@
 }
 
 .otherPositions {
-  width: 23rem;
-  height: 8rem;
+  padding: 0px 20px;
   background-color: #b5a3ea;
   color: #0e0132;
   font-size: 1rem;
   font-weight: 600;
   /* margin-bottom: 5rem; */
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   z-index: 1;
   position: absolute;
@@ -25,10 +24,9 @@
 }
 
 .otherPositions ol {
-  width: 100%;
   display: flex;
   justify-content: center;
-  gap: 3rem;
+  list-style-type: none;
 }
 
 .finalLeaderBoard {
@@ -53,6 +51,11 @@
   align-items: center;
   justify-content: flex-start;
 }
+.winnerImage {
+  width: 80px;
+  border: 5px solid white;
+  border-radius: 100%;
+}
 
 .images {
   margin-top: 0.8rem;
@@ -67,6 +70,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  padding: 10px;
+  color: white;
 }
 
 .firstPlace {
@@ -76,7 +81,7 @@
 }
 .secondPlace {
   height: 60vh;
-  background-color: blue;
+  background-color: #9747ff;
   position: relative;
 }
 .thirdPlace {
