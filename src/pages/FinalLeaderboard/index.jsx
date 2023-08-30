@@ -81,25 +81,6 @@ const FinalLeaderBoard = () => {
           <p>{ thirdPlace.name }</p>
           <p>{ thirdPlace.score }</p>
         </div>
-
-        <div className={ styles.restPlayers }>
-          <ol start={ 4 }>
-            <div>
-              {
-                sortedPlayers.slice(3, 6).map(player => (<li key={ ranId() }>
-                  { `${player.name} (${player.score})` }
-                </li>))
-              }
-            </div>
-            <div>
-              {
-                sortedPlayers.slice(6, sortedPlayers.length).map(player => (<li key={ ranId() }>
-                  { `${player.name} (${player.score})` }
-                </li>))
-              }
-            </div>
-          </ol>
-        </div>
       </div>
     </div>
   );
