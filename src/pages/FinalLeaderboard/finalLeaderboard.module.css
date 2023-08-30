@@ -1,9 +1,38 @@
+.positionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.otherPositions {
+  width: 22rem;
+  height: 8rem;
+  padding: 0px 20px;
+  background-color: #b5a3ea;
+  color: #0e0132;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+  bottom: 2rem;
+  left: 5rem;
+}
+
+.otherPositions ol {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .finalLeaderBoard {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1em;
+  gap: 1rem;
 }
 
 .leaderBoard {
@@ -11,6 +40,7 @@
   align-items: flex-end;
   justify-content: center;
   color: black;
+  position: relative;
 }
 
 .imageDiv {
@@ -19,32 +49,131 @@
   align-items: center;
   justify-content: flex-start;
 }
+.winnerImage {
+  width: 80px;
+  border: 5px solid white;
+  border-radius: 100%;
+}
 
 .images {
+  margin-top: 0.8rem;
   width: 50%;
-  border: 3px solid purple;
   border-radius: 100%;
 }
 
 .bars {
-  width: 150px;
+  width: 170px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  padding: 10px;
+  color: white;
 }
 
 .firstPlace {
-  height: 70vh;
-  background-color: white;
+  height: 75vh;
+  background-color: #4826a6;
+  position: relative;
 }
+
+.firstPlace .images {
+  border: 7px solid #ffbd00;
+}
+
 .secondPlace {
   height: 60vh;
-  background-color: blue;
+  background-color: #9747ff;
+  position: relative;
 }
+
+.secondPlace .images {
+  border: 7px solid #979797;
+}
+
 .thirdPlace {
-  height: 50vh;
-  background-color: green;
+  height: 55vh;
+  background-color: #9747ff;
+  position: relative;
+}
+
+.thirdPlace .images {
+  border: 7px solid #f3a53a;
+}
+
+.position {
+  font-size: 16px;
+}
+
+.score {
+  position: absolute;
+  top: 0.5rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .bars {
+    width: 110px;
+  }
+  .otherPositions {
+    width: 16rem;
+    height: 8rem;
+    font-size: 0.8rem;
+    bottom: 1.5rem;
+    left: 2rem;
+  }
+}
+
+@media screen and (max-width: 289px) {
+  .bars {
+    width: 80px;
+  }
+  .otherPositions {
+    width: 13rem;
+    height: 8rem;
+    font-size: 0.6rem;
+    bottom: 1.5rem;
+    left: 1rem;
+  }
+}
+
+@media screen and (max-width: 213px) {
+  .bars {
+    width: 80px;
+  }
+  .otherPositions {
+    width: 13rem;
+    height: 8rem;
+    font-size: 0.6rem;
+    bottom: -13rem;
+    left: -3rem;
+  }
+  .leaderBoard {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .firstPlace {
+    height: 22vh;
+    border-radius: 25rem;
+    z-index: 1;
+  }
+  .secondPlace {
+    height: 20vh;
+    border-radius: 25rem;
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+  }
+  .thirdPlace {
+    height: 15vh;
+    border-radius: 25rem;
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+  }
 }
 
 .restPlayers {
