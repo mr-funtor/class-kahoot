@@ -14,7 +14,7 @@ import {
 
 const FinalLeaderboard = () => {
   const players = [
-    { name: "Precious", score: 150, image: img1 },
+    { name: "Precious", score: 199, image: img1 },
     { name: "Toyin", score: 250, image: img2 },
     { name: "Waliyah", score: 100, image: img3 },
     { name: "Taiwo", score: 120, image: img4 },
