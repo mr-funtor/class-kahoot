@@ -4,7 +4,6 @@
   justify-content: center;
   /* align-items: end; */
   height: 100vh;
-  position: relative;
   /* background-color: white; */
 }
 
@@ -21,8 +20,8 @@
   align-items: center;
   z-index: 1;
   position: absolute;
-  bottom: -5rem;
-  left: 31rem;
+  bottom: 2rem;
+  left: 4rem;
 }
 
 .otherPositions ol {
@@ -37,7 +36,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1em;
+  gap: 1rem;
 }
 
 .leaderBoard {
@@ -45,6 +44,7 @@
   align-items: flex-end;
   justify-content: center;
   color: black;
+  position: relative;
 }
 
 .imageDiv {
@@ -55,13 +55,14 @@
 }
 
 .images {
+  margin-top: 0.8rem;
   width: 50%;
   border: 3px solid purple;
   border-radius: 100%;
 }
 
 .bars {
-  width: 150px;
+  width: 170px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,7 +70,7 @@
 }
 
 .firstPlace {
-  height: 70vh;
+  height: 75vh;
   background-color: white;
   position: relative;
 }
@@ -79,7 +80,7 @@
   position: relative;
 }
 .thirdPlace {
-  height: 50vh;
+  height: 55vh;
   background-color: green;
   position: relative;
 }
@@ -89,7 +90,71 @@
 
 .score {
   position: absolute;
-  top: -1rem;
+  top: -0.5rem;
   font-size: 2rem;
   color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .bars {
+    width: 110px;
+  }
+  .otherPositions {
+    width: 16rem;
+    height: 8rem;
+    font-size: 0.8rem;
+    bottom: 1.5rem;
+    left: 2rem;
+  }
+}
+
+@media screen and (max-width: 289px) {
+  .bars {
+    width: 80px;
+  }
+  .otherPositions {
+    width: 13rem;
+    height: 8rem;
+    font-size: 0.6rem;
+    bottom: 1.5rem;
+    left: 1rem;
+  }
+}
+
+@media screen and (max-width: 213px) {
+  .bars {
+    width: 80px;
+  }
+  .otherPositions {
+    width: 13rem;
+    height: 8rem;
+    font-size: 0.6rem;
+    bottom: -13rem;
+    left: -3rem;
+  }
+  .leaderBoard {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .firstPlace {
+    height: 22vh;
+    border-radius: 25rem;
+    z-index: 1;
+  }
+  .secondPlace {
+    height: 20vh;
+    border-radius: 25rem;
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+  }
+  .thirdPlace {
+    height: 15vh;
+    border-radius: 25rem;
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+  }
 }
