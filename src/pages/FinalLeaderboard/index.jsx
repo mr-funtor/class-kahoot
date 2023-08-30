@@ -90,25 +90,36 @@ const FinalLeaderboard = () => {
           </LoadingSpinner>
           <p>WINNER!</p>
         </div>
+
         <div className={styles.leaderBoard}>
-          <div className={`${styles.bars} ${styles.secondPlace}`}>
+
+          <div className={styles.scoreBoard}>
             <p className={styles.score}>2</p>
-            <img className={styles.images} src={secondPlace.img} alt="" />
-            <p className={styles.position}>{secondPlace.name}</p>
-            <p className={styles.position}>{secondPlace.score} </p>
+            <div className={`${styles.bars} ${styles.secondPlace}`}>
+              <img className={styles.images} src={secondPlace.img} alt="" />
+              <p className={styles.position}>{secondPlace.name}</p>
+              <p className={styles.position}>{secondPlace.score} </p>
+            </div>
           </div>
-          <div className={`${styles.bars} ${styles.firstPlace}`}>
+
+          <div className={styles.scoreBoard}>
             <p className={styles.score}>1</p>
-            <img className={styles.images} src={firstPlace.img} alt="" />
-            <p className={styles.position}>{firstPlace.name}</p>
-            <p className={styles.position}>{firstPlace.score}</p>
+            <div className={`${styles.bars} ${styles.firstPlace}`}>
+              <img className={styles.images} src={firstPlace.img} alt="" />
+              <p className={styles.position}>{firstPlace.name}</p>
+              <p className={styles.position}>{firstPlace.score}</p>
+            </div>
           </div>
-          <div className={`${styles.bars} ${styles.thirdPlace}`}>
+
+          <div className={styles.scoreBoard}>
             <p className={styles.score}>3</p>
-            <img className={styles.images} src={thirdPlace.img} alt="" />
-            <p className={styles.position}>{thirdPlace.name}</p>
-            <p className={styles.position}>{thirdPlace.score}</p>
+            <div className={`${styles.bars} ${styles.thirdPlace}`}>
+              <img className={styles.images} src={thirdPlace.img} alt="" />
+              <p className={styles.position}>{thirdPlace.name}</p>
+              <p className={styles.position}>{thirdPlace.score}</p>
+            </div>
           </div>
+          
         </div>
       </div>
     </div>
