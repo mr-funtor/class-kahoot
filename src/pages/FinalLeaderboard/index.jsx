@@ -50,14 +50,26 @@ const FinalLeaderboard = () => {
         <div className={styles.otherPositions}>
           <ol start="4">
             <div>
-              <li>Username (score)</li>
-              <li>Username (score)</li>
-              <li>Username (score)</li>
+              <li>
+                {sortedPlayers[3].name} ({sortedPlayers[3].score})
+              </li>
+              <li>
+                {sortedPlayers[4].name} ({sortedPlayers[4].score})
+              </li>
+              <li>
+                {sortedPlayers[5].name} ({sortedPlayers[5].score})
+              </li>
             </div>
             <div>
-              <li>Username (score)</li>
-              <li>Username (score)</li>
-              <li>Username (score)</li>
+              <li>
+                {sortedPlayers[6].name} ({sortedPlayers[6].score})
+              </li>
+              <li>
+                {sortedPlayers[7].name} ({sortedPlayers[7].score})
+              </li>
+              <li>
+                {sortedPlayers[8].name} ({sortedPlayers[8].score})
+              </li>
             </div>
           </ol>
         </div>
