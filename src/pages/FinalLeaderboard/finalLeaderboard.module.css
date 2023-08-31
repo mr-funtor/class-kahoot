@@ -18,7 +18,7 @@
   bottom: -38rem;
 }
 
-.flex{
+.flex {
   display: flex;
   gap: 1em;
 }
@@ -56,7 +56,7 @@
   align-items: center;
   justify-content: flex-start;
 }
-.winnerImage{
+.winnerImage {
   width: 80px;
   border: 5px solid white;
   border-radius: 100%;
@@ -95,6 +95,52 @@
 }
 .position {
   font-size: 16px;
+}
+
+@media only screen and (max-width: 425px) {
+  .otherPositions {
+    padding: 0px 10px;
+    background-color: #b5a3ea;
+    color: #0e0132;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    bottom: -35rem;
+  }
+  .scoreBoard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.3em;
+  }
+  .images {
+    width: 40%;
+    border: 3px solid purple;
+    border-radius: 100%;
+  }
+  .bars {
+    width: 100px;
+    padding: 10px;
+    color: white;
+  }
+  .firstPlace {
+    /* height: 70vh; */
+    background-color: #4826a6;
+  }
+  .secondPlace {
+    /* height: 60vh; */
+    background-color: #9747ff;
+  }
+  .thirdPlace {
+    /* height: 50vh; */
+    background-color: #9747ff;
+  }
 }
 
 /* .score {

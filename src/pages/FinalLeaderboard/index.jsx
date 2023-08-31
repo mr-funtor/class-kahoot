@@ -46,6 +46,7 @@ const FinalLeaderboard = () => {
     score: sortedPlayers[2].score,
   };
 
+
   // console.log(sortedPlayers.slice(3));
   const otherPlayers = sortedPlayers.slice(3).map((player, index) => (
     <div key={index} className={styles.otherPositions}>
@@ -64,32 +65,6 @@ const FinalLeaderboard = () => {
   return (
     <div className={styles.finalLeaderBoard}>
       <div className={styles.positionContainer}>
-        {/* <div className={styles.otherPositions}>
-          <ol start="4">
-            <div>
-              <li>
-                {sortedPlayers[3].name} ({sortedPlayers[3].score})
-              </li>
-              <li>
-                {sortedPlayers[4].name} ({sortedPlayers[4].score})
-              </li>
-              <li>
-                {sortedPlayers[5].name} ({sortedPlayers[5].score})
-              </li>
-            </div>
-            <div>
-              <li>
-                {sortedPlayers[6].name} ({sortedPlayers[6].score})
-              </li>
-              <li>
-                {sortedPlayers[7].name} ({sortedPlayers[7].score})
-              </li>
-              <li>
-                {sortedPlayers[8].name} ({sortedPlayers[8].score})
-              </li>
-            </div>
-          </ol>
-        </div> */}
         {otherPlayers}
       </div>
 
