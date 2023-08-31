@@ -26,8 +26,7 @@ const FinalLeaderboard = () => {
   ];
 
   const sortedPlayers = [...players].sort((a, b) => b.score - a.score);
-  const ranId = Math.random
-
+  const ranId = Math.random;
 
   // console.log(sortedPlayers);
 
@@ -47,69 +46,45 @@ const FinalLeaderboard = () => {
     score: sortedPlayers[2].score,
   };
 
-
   // console.log(sortedPlayers.slice(3));
-  const otherPlayers = sortedPlayers.slice(3).map((player, index) => (
-    <div key={ index } className={ styles.otherPositions }>
-      <ol start={ 4 }>
-        <li style={ { display: "flex" } }>
-          <p>{ index + 4 }.</p>
-          <div className={ styles.flex }>
-            <p>{ player.name }</p>
-            <p>({ player.score })</p>
-          </div>
-        </li>
-      </ol>
-    </div>
-  ));
+  const middleThree = sortedPlayers.slice(3, 6).map((player) => {
+    return <li key={Math.random()}>{`${player.name} (${player.score})`}</li>;
+  });
+
+  const lastThree = sortedPlayers
+    .slice(6, sortedPlayers.length)
+    .map((player) => {
+      return <li key={Math.random()}>{`${player.name} (${player.score})`}</li>;
+    });
 
   return (
     <div className={styles.finalLeaderBoard}>
-      <div className={styles.positionContainer}>
-        {otherPlayers}
-      </div>
-      <div className={ styles.leaderBoard }>
+      <div className={styles.leaderBoard}>
         <div positionContainer>
-          <div className={ styles.otherPositions }>
+          <div className={styles.otherPositions}>
             <ol start="4">
-              <div>
-                { sortedPlayers.slice(3, 6).map((player) => {
-                  return (
-                    <li
-                      key={ Math.random() }
-                    >{ `${player.name} (${player.score})` }</li>
-                  );
-                }) }
-              </div>
-              <div>
-                { sortedPlayers.slice(6, sortedPlayers.length).map((player) => {
-                  return (
-                    <li
-                      key={ Math.random() }
-                    >{ `${player.name} (${player.score})` }</li>
-                  );
-                }) }
-              </div>
+              <div>{middleThree}</div>
+              <div>{lastThree}</div>
             </ol>
           </div>
         </div>
-        <div className={ `${styles.bars} ${styles.secondPlace}` }>
-          <p className={ styles.score }>2</p>
-          <img className={ styles.images } src={ secondPlace.img } alt="" />
-          <p className={ styles.position }>{ secondPlace.name }</p>
-          <p className={ styles.position }>{ secondPlace.score } </p>
+        <div className={`${styles.bars} ${styles.secondPlace}`}>
+          <p className={styles.score}>2</p>
+          <img className={styles.images} src={secondPlace.img} alt="" />
+          <p className={styles.position}>{secondPlace.name}</p>
+          <p className={styles.position}>{secondPlace.score} </p>
         </div>
-        <div className={ `${styles.bars} ${styles.firstPlace}` }>
-          <p className={ styles.score }>1</p>
-          <img className={ styles.images } src={ firstPlace.img } alt="" />
-          <p className={ styles.position }>{ firstPlace.name }</p>
-          <p className={ styles.position }>{ firstPlace.score }</p>
+        <div className={`${styles.bars} ${styles.firstPlace}`}>
+          <p className={styles.score}>1</p>
+          <img className={styles.images} src={firstPlace.img} alt="" />
+          <p className={styles.position}>{firstPlace.name}</p>
+          <p className={styles.position}>{firstPlace.score}</p>
         </div>
-        <div className={ `${styles.bars} ${styles.thirdPlace}` }>
-          <p className={ styles.score }>3</p>
-          <img className={ styles.images } src={ thirdPlace.img } alt="" />
-          <p className={ styles.position }>{ thirdPlace.name }</p>
-          <p className={ styles.position }>{ thirdPlace.score }</p>
+        <div className={`${styles.bars} ${styles.thirdPlace}`}>
+          <p className={styles.score}>3</p>
+          <img className={styles.images} src={thirdPlace.img} alt="" />
+          <p className={styles.position}>{thirdPlace.name}</p>
+          <p className={styles.position}>{thirdPlace.score}</p>
         </div>
       </div>
     </div>

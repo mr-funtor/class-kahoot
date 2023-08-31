@@ -17,8 +17,9 @@
   align-items: center;
   z-index: 1;
   position: absolute;
-  bottom: 2rem;
+  bottom: 1rem;
   left: 5rem;
+  border: 2px solid red;
 }
 
 .otherPositions ol {
@@ -106,8 +107,6 @@
 }
 
 .score {
-  position: absolute;
-  top: 0.5rem;
   font-size: 2rem;
   color: #fff;
 }
