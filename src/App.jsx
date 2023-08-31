@@ -11,6 +11,8 @@ import QuestionPage from "./pages/QuestionPage/QuestionPage";
 import HostWaiting from "./pages/hostSide/HostWaiting";
 import ResponseTrackerPage from "./pages/hostSide/responseTracker/ResponseTrackerPage";
 import HostLeaderBoard from "./pages/hostSide/HostLeaderBoard/HostLeaderBoard";
+import ResultPage from "./pages/hostSide/resultPage/resultPage";
+import WaitingRoom from "./pages/waitingRoom/WaitingRoom";
 import FinalLeaderboard from "./pages/FinalLeaderboard";
 
 function App() {
@@ -35,8 +37,8 @@ function App() {
           <Link to="questions">Question</Link>
           <Link to="hostwaiting">HostWaiting</Link>
           <Link to="responses">Responses</Link>
-          <Link to="leaderBoard">LeaderBoard</Link>
-          <Link to="finalLeaderboard">FinalLeaderBoard</Link>
+          <Link to="result">Result</Link>
+          <Link to="FinalLeaderboard">Final Leaderboard</Link>
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -45,9 +47,11 @@ function App() {
           <Route path="/playerWaiting" element={<PlayerWaiting />} />
           <Route path="/questions" element={<QuestionPage />} />
           <Route path="/responses" element={<ResponseTrackerPage />} />
+          <Route path="/result" element={<ResultPage />} />
           <Route path="/hostwaiting" element={<HostWaiting />} />
           <Route path="/leaderBoard" element={<HostLeaderBoard />} />
-          <Route path="/finalleaderBoard" element={<FinalLeaderboard />} />
+          <Route path="/waitingRoom" element={<WaitingRoom />} />
+          <Route path="/FinalLeaderboard" element={<FinalLeaderboard />} />
           {/* Note: the route is just to see how to navigate to the leaderBoard page, is not necessarily where is meant to be */}
         </Routes>
       </Router>
