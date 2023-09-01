@@ -19,7 +19,7 @@
   position: absolute;
   bottom: 1rem;
   left: 5rem;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .otherPositions ol {

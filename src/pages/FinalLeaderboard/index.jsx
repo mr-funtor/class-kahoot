@@ -22,7 +22,7 @@ const FinalLeaderboard = () => {
     { name: "Theo", score: 110, image: img6 },
     { name: "Lanre", score: 180, image: img7 },
     { name: "Damola", score: 190, image: img8 },
-    { name: "Wale", score: 220, image: img9 },
+    { name: "Wale", score: 20, image: img9 },
   ];
 
   const sortedPlayers = [...players].sort((a, b) => b.score - a.score);
