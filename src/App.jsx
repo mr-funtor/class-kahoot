@@ -13,6 +13,7 @@ import ResponseTrackerPage from "./pages/hostSide/responseTracker/ResponseTracke
 import HostLeaderBoard from "./pages/hostSide/HostLeaderBoard/HostLeaderBoard";
 import ResultPage from "./pages/hostSide/resultPage/resultPage";
 import WaitingRoom from "./pages/waitingRoom/WaitingRoom";
+import FinalLeaderboard from "./pages/FinalLeaderboard";
 
 function App() {
   return (
@@ -29,14 +30,15 @@ function App() {
             boxShadow: "2px 2px 12px 12px rgba(0,0,0,0.2)",
           }}
         >
-          <Link to="/">home page</Link>
-          <Link to="gamePin">Game pin page</Link>
-          <Link to="nickname">Nickname page</Link>
-          <Link to="playerWaiting">Player waiting page</Link>
-          <Link to="questions">Question Page</Link>
-          <Link to="hostwaiting">Host Waiting</Link>
+          <Link to="/">home</Link>
+          <Link to="gamePin">GamePin</Link>
+          <Link to="nickname">Nickname</Link>
+          <Link to="playerWaiting">PlayerWaiting</Link>
+          <Link to="questions">Question</Link>
+          <Link to="hostwaiting">HostWaiting</Link>
           <Link to="responses">Responses</Link>
           <Link to="result">Result</Link>
+          <Link to="FinalLeaderboard">Final Leaderboard</Link>
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -49,6 +51,7 @@ function App() {
           <Route path="/hostwaiting" element={<HostWaiting />} />
           <Route path="/leaderBoard" element={<HostLeaderBoard />} />
           <Route path="/waitingRoom" element={<WaitingRoom />} />
+          <Route path="/FinalLeaderboard" element={<FinalLeaderboard />} />
           {/* Note: the route is just to see how to navigate to the leaderBoard page, is not necessarily where is meant to be */}
         </Routes>
       </Router>
